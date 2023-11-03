@@ -1,0 +1,1742 @@
+[
+    {
+        "id": "-jynRAmRh0ZRDI9yLkZ0Nw",
+        "alias": "la-pasta-lynwood",
+        "name": "La Pasta",
+        "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/EZxJPjuG6D6thJa_gQPvRA/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/la-pasta-lynwood?adjust_creative=R6D4r9_3fLJt7LnAmpdrJg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=R6D4r9_3fLJt7LnAmpdrJg",
+        "review_count": 390,
+        "categories": [
+            { "alias": "italian", "title": "Italian" },
+            { "alias": "pizza", "title": "Pizza" },
+            { "alias": "wine_bars", "title": "Wine Bars" }
+        ],
+        "rating": 4.5,
+        "coordinates": { "latitude": 33.931881, "longitude": -118.20376233 },
+        "transactions": ["pickup", "delivery"],
+        "price": "$$",
+        "location": {
+            "address1": "3614 Martin Luther King Jr Blvd",
+            "address2": null,
+            "address3": "",
+            "city": "Lynwood",
+            "zip_code": "90262",
+            "country": "US",
+            "state": "CA",
+            "display_address": [
+                "3614 Martin Luther King Jr Blvd",
+                "Lynwood, CA 90262"
+            ]
+        },
+        "phone": "+14247858048",
+        "display_phone": "(424) 785-8048",
+        "distance": 6175.870181106234
+    },
+    {
+        "id": "LxauzrdlnBCvrDfx6NGnBQ",
+        "alias": "vivace-los-angeles-2",
+        "name": "Vivace",
+        "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/Z2iuO5PZtm6RCI58MFU76g/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/vivace-los-angeles-2?adjust_creative=R6D4r9_3fLJt7LnAmpdrJg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=R6D4r9_3fLJt7LnAmpdrJg",
+        "review_count": 46,
+        "categories": [
+            { "alias": "foodtrucks", "title": "Food Trucks" },
+            { "alias": "pizza", "title": "Pizza" }
+        ],
+        "rating": 4.5,
+        "coordinates": { "latitude": 33.96699, "longitude": -118.25206 },
+        "transactions": [],
+        "price": "$$",
+        "location": {
+            "address1": "",
+            "address2": "",
+            "address3": null,
+            "city": "Los Angeles",
+            "zip_code": "90001",
+            "country": "US",
+            "state": "CA",
+            "display_address": ["Los Angeles, CA 90001"]
+        },
+        "phone": "+13104830024",
+        "display_phone": "(310) 483-0024",
+        "distance": 469.9197713474745
+    },
+    {
+        "id": "PpIarPzYC-d4hYmtxTAvmQ",
+        "alias": "shakeys-pizza-parlor-huntington-park-3",
+        "name": "Shakey's Pizza Parlor",
+        "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/qthc3CFvXEl-Z7GTCSayRA/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/shakeys-pizza-parlor-huntington-park-3?adjust_creative=R6D4r9_3fLJt7LnAmpdrJg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=R6D4r9_3fLJt7LnAmpdrJg",
+        "review_count": 165,
+        "categories": [
+            { "alias": "pizza", "title": "Pizza" },
+            { "alias": "buffets", "title": "Buffets" }
+        ],
+        "rating": 4,
+        "coordinates": { "latitude": 33.9741693, "longitude": -118.2271238 },
+        "transactions": ["delivery", "pickup"],
+        "price": "$$",
+        "location": {
+            "address1": "2522 E Florence Ave",
+            "address2": "",
+            "address3": "",
+            "city": "Huntington Park",
+            "zip_code": "90255",
+            "country": "US",
+            "state": "CA",
+            "display_address": [
+                "2522 E Florence Ave",
+                "Huntington Park, CA 90255"
+            ]
+        },
+        "phone": "+13235825421",
+        "display_phone": "(323) 582-5421",
+        "distance": 1885.1838842617217
+    },
+    {
+        "id": "TcbgGfKA5p1615ty_QYyFg",
+        "alias": "detroit-pizza-depot-los-angeles",
+        "name": "Detroit Pizza Depot",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/shsUVUEZMeQBXOpuVZYywQ/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/detroit-pizza-depot-los-angeles?adjust_creative=R6D4r9_3fLJt7LnAmpdrJg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=R6D4r9_3fLJt7LnAmpdrJg",
+        "review_count": 59,
+        "categories": [{ "alias": "pizza", "title": "Pizza" }],
+        "rating": 4.5,
+        "coordinates": { "latitude": 34.01478, "longitude": -118.27883 },
+        "transactions": ["pickup", "delivery"],
+        "location": {
+            "address1": "358 W 38th St",
+            "address2": "Unit 13",
+            "address3": "",
+            "city": "Los Angeles",
+            "zip_code": "90037",
+            "country": "US",
+            "state": "CA",
+            "display_address": [
+                "358 W 38th St",
+                "Unit 13",
+                "Los Angeles, CA 90037"
+            ]
+        },
+        "phone": "+19099787383",
+        "display_phone": "(909) 978-7383",
+        "distance": 5369.343650645238
+    },
+    {
+        "id": "eKRzZIbPoTpk9YC3OHKw4A",
+        "alias": "andys-pizzeria-and-mexican-food-los-angeles",
+        "name": "Andy's Pizzeria And Mexican Food",
+        "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/RtjnQwD5ESUSWj5tAUF0Zg/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/andys-pizzeria-and-mexican-food-los-angeles?adjust_creative=R6D4r9_3fLJt7LnAmpdrJg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=R6D4r9_3fLJt7LnAmpdrJg",
+        "review_count": 55,
+        "categories": [
+            { "alias": "pizza", "title": "Pizza" },
+            { "alias": "mexican", "title": "Mexican" }
+        ],
+        "rating": 4,
+        "coordinates": {
+            "latitude": 33.979045,
+            "longitude": -118.25619101719666
+        },
+        "transactions": ["delivery", "pickup"],
+        "price": "$",
+        "location": {
+            "address1": "6700 S Central Ave",
+            "address2": "",
+            "address3": "",
+            "city": "Los Angeles",
+            "zip_code": "90001",
+            "country": "US",
+            "state": "CA",
+            "display_address": ["6700 S Central Ave", "Los Angeles, CA 90001"]
+        },
+        "phone": "+13238095995",
+        "display_phone": "(323) 809-5995",
+        "distance": 975.1883502215858
+    },
+    {
+        "id": "9mHXsA466j-WfqitLT9_Ag",
+        "alias": "trimana-los-angeles-54",
+        "name": "Trimana",
+        "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/IL3NeIdzgddiTK6V0O9qQQ/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/trimana-los-angeles-54?adjust_creative=R6D4r9_3fLJt7LnAmpdrJg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=R6D4r9_3fLJt7LnAmpdrJg",
+        "review_count": 111,
+        "categories": [
+            { "alias": "mexican", "title": "Mexican" },
+            { "alias": "burgers", "title": "Burgers" },
+            { "alias": "pizza", "title": "Pizza" }
+        ],
+        "rating": 4,
+        "coordinates": { "latitude": 34.016204, "longitude": -118.286373 },
+        "transactions": [],
+        "price": "$",
+        "location": {
+            "address1": "700 Exposition Park Dr",
+            "address2": "",
+            "address3": "",
+            "city": "Los Angeles",
+            "zip_code": "90037",
+            "country": "US",
+            "state": "CA",
+            "display_address": [
+                "700 Exposition Park Dr",
+                "Los Angeles, CA 90037"
+            ]
+        },
+        "phone": "+12137481226",
+        "display_phone": "(213) 748-1226",
+        "distance": 5903.721258358249
+    },
+    {
+        "id": "rzsrPr746Il0HHR2gHpW8g",
+        "alias": "angelenos-wood-fired-pizza-los-angeles-10",
+        "name": "Angelenos Wood Fired Pizza",
+        "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/TQORz1_QAwvzVdo3dZtVaA/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/angelenos-wood-fired-pizza-los-angeles-10?adjust_creative=R6D4r9_3fLJt7LnAmpdrJg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=R6D4r9_3fLJt7LnAmpdrJg",
+        "review_count": 69,
+        "categories": [
+            { "alias": "pizza", "title": "Pizza" },
+            { "alias": "catering", "title": "Caterers" },
+            { "alias": "foodtrucks", "title": "Food Trucks" }
+        ],
+        "rating": 5,
+        "coordinates": { "latitude": 34.114512, "longitude": -118.182215 },
+        "transactions": [],
+        "price": "$",
+        "location": {
+            "address1": "6312 York Blvd",
+            "address2": null,
+            "address3": "",
+            "city": "Los Angeles",
+            "zip_code": "90042",
+            "country": "US",
+            "state": "CA",
+            "display_address": ["6312 York Blvd", "Los Angeles, CA 90042"]
+        },
+        "phone": "+18337499252",
+        "display_phone": "(833) 749-9252",
+        "distance": 16744.300537368563
+    },
+    {
+        "id": "12_bCH3pXUDO5GIUZ6ccHg",
+        "alias": "sirys-pizza-south-gate",
+        "name": "Siry's Pizza",
+        "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/UEkJu4pcdKMWKBEeJEemNg/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/sirys-pizza-south-gate?adjust_creative=R6D4r9_3fLJt7LnAmpdrJg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=R6D4r9_3fLJt7LnAmpdrJg",
+        "review_count": 78,
+        "categories": [
+            { "alias": "pizza", "title": "Pizza" },
+            { "alias": "chicken_wings", "title": "Chicken Wings" },
+            { "alias": "bbq", "title": "Barbeque" }
+        ],
+        "rating": 4,
+        "coordinates": { "latitude": 33.9569089, "longitude": -118.2058406 },
+        "transactions": ["delivery", "pickup"],
+        "price": "$",
+        "location": {
+            "address1": "8611 California Ave",
+            "address2": "Ste F",
+            "address3": "",
+            "city": "South Gate",
+            "zip_code": "90280",
+            "country": "US",
+            "state": "CA",
+            "display_address": [
+                "8611 California Ave",
+                "Ste F",
+                "South Gate, CA 90280"
+            ]
+        },
+        "phone": "+13237498361",
+        "display_phone": "(323) 749-8361",
+        "distance": 4251.695620080934
+    },
+    {
+        "id": "fnyhZmKjIiLjdMtNh6HWVw",
+        "alias": "double-or-nothin-pizza-and-pasta-huntington-park-2",
+        "name": "Double or Nothin’ Pizza & Pasta",
+        "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/P8GOvEbds_8pmU65BcWy4A/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/double-or-nothin-pizza-and-pasta-huntington-park-2?adjust_creative=R6D4r9_3fLJt7LnAmpdrJg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=R6D4r9_3fLJt7LnAmpdrJg",
+        "review_count": 65,
+        "categories": [
+            { "alias": "chicken_wings", "title": "Chicken Wings" },
+            { "alias": "pizza", "title": "Pizza" }
+        ],
+        "rating": 4.5,
+        "coordinates": { "latitude": 33.975175, "longitude": -118.223464 },
+        "transactions": ["delivery", "pickup"],
+        "location": {
+            "address1": "2661 E Florence Ave",
+            "address2": "Ste D-2",
+            "address3": "",
+            "city": "Huntington Park",
+            "zip_code": "90255",
+            "country": "US",
+            "state": "CA",
+            "display_address": [
+                "2661 E Florence Ave",
+                "Ste D-2",
+                "Huntington Park, CA 90255"
+            ]
+        },
+        "phone": "+13237496939",
+        "display_phone": "(323) 749-6939",
+        "distance": 2223.4323998027476
+    },
+    {
+        "id": "EpcTIDoRQ-S2tzQKj55Pgw",
+        "alias": "pizzaroni-south-gate-south-gate",
+        "name": "Pizzaroni - South Gate",
+        "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/bPmtsSiDAOCSDHmPTZLfFQ/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/pizzaroni-south-gate-south-gate?adjust_creative=R6D4r9_3fLJt7LnAmpdrJg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=R6D4r9_3fLJt7LnAmpdrJg",
+        "review_count": 34,
+        "categories": [
+            { "alias": "pizza", "title": "Pizza" },
+            { "alias": "chicken_wings", "title": "Chicken Wings" }
+        ],
+        "rating": 4.5,
+        "coordinates": { "latitude": 33.94472, "longitude": -118.21273 },
+        "transactions": ["delivery", "pickup"],
+        "price": "$",
+        "location": {
+            "address1": "3280 Tweedy Blvd",
+            "address2": "",
+            "address3": null,
+            "city": "South Gate",
+            "zip_code": "90280",
+            "country": "US",
+            "state": "CA",
+            "display_address": ["3280 Tweedy Blvd", "South Gate, CA 90280"]
+        },
+        "phone": "+13234849975",
+        "display_phone": "(323) 484-9975",
+        "distance": 4576.9129218201615
+    },
+    {
+        "id": "jyEwf58AxwTAc9ZIO7tLDw",
+        "alias": "nona-rosa-pizza-glendale",
+        "name": "Nona Rosa Pizza",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/NLlGbZ1fI_uBMJ6Py9aRYA/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/nona-rosa-pizza-glendale?adjust_creative=R6D4r9_3fLJt7LnAmpdrJg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=R6D4r9_3fLJt7LnAmpdrJg",
+        "review_count": 48,
+        "categories": [
+            { "alias": "foodtrucks", "title": "Food Trucks" },
+            { "alias": "pizza", "title": "Pizza" },
+            { "alias": "catering", "title": "Caterers" }
+        ],
+        "rating": 5,
+        "coordinates": { "latitude": 34.1337367, "longitude": -118.2468148 },
+        "transactions": [],
+        "location": {
+            "address1": "",
+            "address2": null,
+            "address3": "",
+            "city": "Glendale",
+            "zip_code": "91205",
+            "country": "US",
+            "state": "CA",
+            "display_address": ["Glendale, CA 91205"]
+        },
+        "phone": "+16265816245",
+        "display_phone": "(626) 581-6245",
+        "distance": 17765.406415448426
+    },
+    {
+        "id": "nVztiKf81L6dERdOlkuKog",
+        "alias": "bens-general-store-and-deli-vernon-8",
+        "name": "Ben's General Store and Deli",
+        "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/N1xHnBwaaR7WucYsvTYCZg/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/bens-general-store-and-deli-vernon-8?adjust_creative=R6D4r9_3fLJt7LnAmpdrJg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=R6D4r9_3fLJt7LnAmpdrJg",
+        "review_count": 39,
+        "categories": [
+            { "alias": "delis", "title": "Delis" },
+            { "alias": "beer_and_wine", "title": "Beer, Wine & Spirits" },
+            { "alias": "pizza", "title": "Pizza" }
+        ],
+        "rating": 4,
+        "coordinates": {
+            "latitude": 33.9949618299737,
+            "longitude": -118.229855580826
+        },
+        "transactions": ["delivery", "pickup"],
+        "price": "$",
+        "location": {
+            "address1": "5218 S Santa Fe Ave",
+            "address2": "",
+            "address3": "",
+            "city": "Vernon",
+            "zip_code": "90058",
+            "country": "US",
+            "state": "CA",
+            "display_address": ["5218 S Santa Fe Ave", "Vernon, CA 90058"]
+        },
+        "phone": "+13235832434",
+        "display_phone": "(323) 583-2434",
+        "distance": 2848.7078262460655
+    },
+    {
+        "id": "2jGH76_dh9WKUeqQkkmW8A",
+        "alias": "las-alondras-bakery-los-angeles",
+        "name": "Las Alondras Bakery",
+        "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/Qu-AXVKeH5iO3pJgHH6oQg/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/las-alondras-bakery-los-angeles?adjust_creative=R6D4r9_3fLJt7LnAmpdrJg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=R6D4r9_3fLJt7LnAmpdrJg",
+        "review_count": 22,
+        "categories": [
+            { "alias": "bakeries", "title": "Bakeries" },
+            { "alias": "pizza", "title": "Pizza" },
+            { "alias": "customcakes", "title": "Custom Cakes" }
+        ],
+        "rating": 4.5,
+        "coordinates": { "latitude": 34.00861, "longitude": -118.25627 },
+        "transactions": [],
+        "price": "$",
+        "location": {
+            "address1": "4118 S Central Ave",
+            "address2": "",
+            "address3": "",
+            "city": "Los Angeles",
+            "zip_code": "90011",
+            "country": "US",
+            "state": "CA",
+            "display_address": ["4118 S Central Ave", "Los Angeles, CA 90011"]
+        },
+        "phone": "+13232338489",
+        "display_phone": "(323) 233-8489",
+        "distance": 3938.119009159158
+    },
+    {
+        "id": "x2rWmUldqK6F4yV8jgJfIw",
+        "alias": "brix-pizza-los-angeles",
+        "name": "Brix Pizza",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/zRPi9y6yp7wbNGsqE5nUeA/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/brix-pizza-los-angeles?adjust_creative=R6D4r9_3fLJt7LnAmpdrJg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=R6D4r9_3fLJt7LnAmpdrJg",
+        "review_count": 65,
+        "categories": [
+            { "alias": "newamerican", "title": "American (New)" },
+            { "alias": "pizza", "title": "Pizza" }
+        ],
+        "rating": 4,
+        "coordinates": { "latitude": 33.9743309, "longitude": -118.2863617 },
+        "transactions": ["delivery", "pickup"],
+        "price": "$",
+        "location": {
+            "address1": "708 Florence Ave",
+            "address2": "",
+            "address3": "",
+            "city": "Los Angeles",
+            "zip_code": "90044",
+            "country": "US",
+            "state": "CA",
+            "display_address": ["708 Florence Ave", "Los Angeles, CA 90044"]
+        },
+        "phone": "+13237502749",
+        "display_phone": "(323) 750-2749",
+        "distance": 3577.875052551105
+    },
+    {
+        "id": "XcSU01pvNV8X_rCtU4BG3w",
+        "alias": "elmerinos-pizza-los-angeles",
+        "name": "Elmerinos pizza",
+        "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/SJ_upsKiNIuB74UyIYqAag/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/elmerinos-pizza-los-angeles?adjust_creative=R6D4r9_3fLJt7LnAmpdrJg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=R6D4r9_3fLJt7LnAmpdrJg",
+        "review_count": 2,
+        "categories": [
+            { "alias": "pizza", "title": "Pizza" },
+            { "alias": "salad", "title": "Salad" }
+        ],
+        "rating": 5,
+        "coordinates": { "latitude": 33.97853, "longitude": -118.2497 },
+        "transactions": [],
+        "location": {
+            "address1": null,
+            "address2": null,
+            "address3": "",
+            "city": "Los Angeles",
+            "zip_code": "90001",
+            "country": "US",
+            "state": "CA",
+            "display_address": ["Los Angeles, CA 90001"]
+        },
+        "phone": "+13232749462",
+        "display_phone": "(323) 274-9462",
+        "distance": 469.9197713474745
+    },
+    {
+        "id": "tfrRl3r_VDoNPCOORiaE_A",
+        "alias": "porto-village-pizza-huntington-park",
+        "name": "Porto Village Pizza",
+        "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/2yU9PT4VwH0aYMszM6AHnw/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/porto-village-pizza-huntington-park?adjust_creative=R6D4r9_3fLJt7LnAmpdrJg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=R6D4r9_3fLJt7LnAmpdrJg",
+        "review_count": 206,
+        "categories": [
+            { "alias": "pizza", "title": "Pizza" },
+            { "alias": "desserts", "title": "Desserts" },
+            { "alias": "salad", "title": "Salad" }
+        ],
+        "rating": 3.5,
+        "coordinates": { "latitude": 33.9893249, "longitude": -118.2196099 },
+        "transactions": ["delivery", "pickup"],
+        "price": "$$",
+        "location": {
+            "address1": "2811 E Slauson Ave",
+            "address2": null,
+            "address3": null,
+            "city": "Huntington Park",
+            "zip_code": "90255",
+            "country": "US",
+            "state": "CA",
+            "display_address": [
+                "2811 E Slauson Ave",
+                "Huntington Park, CA 90255"
+            ]
+        },
+        "phone": "+13235882440",
+        "display_phone": "(323) 588-2440",
+        "distance": 3118.5887318374475
+    },
+    {
+        "id": "3zN3AfycRiBF07vE5UMnKQ",
+        "alias": "pizza-mar-los-angeles",
+        "name": "Pizza Mar",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/5gZlsfSU6zce4-G0C3R_4w/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/pizza-mar-los-angeles?adjust_creative=R6D4r9_3fLJt7LnAmpdrJg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=R6D4r9_3fLJt7LnAmpdrJg",
+        "review_count": 16,
+        "categories": [
+            { "alias": "chicken_wings", "title": "Chicken Wings" },
+            { "alias": "pizza", "title": "Pizza" },
+            { "alias": "seafood", "title": "Seafood" }
+        ],
+        "rating": 4.5,
+        "coordinates": { "latitude": 34.0042, "longitude": -118.2656 },
+        "transactions": [],
+        "location": {
+            "address1": "523 E Vernon Ave",
+            "address2": null,
+            "address3": "",
+            "city": "Los Angeles",
+            "zip_code": "90011",
+            "country": "US",
+            "state": "CA",
+            "display_address": ["523 E Vernon Ave", "Los Angeles, CA 90011"]
+        },
+        "phone": "+13232314993",
+        "display_phone": "(323) 231-4993",
+        "distance": 3755.170992665155
+    },
+    {
+        "id": "6RkqzCIFAx8s4f_KcvMpdA",
+        "alias": "pizza-hut-los-angeles-4",
+        "name": "Pizza Hut",
+        "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/RH82PKnDNMjBjz62UDhIuw/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/pizza-hut-los-angeles-4?adjust_creative=R6D4r9_3fLJt7LnAmpdrJg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=R6D4r9_3fLJt7LnAmpdrJg",
+        "review_count": 41,
+        "categories": [
+            { "alias": "pizza", "title": "Pizza" },
+            { "alias": "chicken_wings", "title": "Chicken Wings" },
+            { "alias": "hotdogs", "title": "Fast Food" }
+        ],
+        "rating": 1.5,
+        "coordinates": { "latitude": 33.975162, "longitude": -118.248247 },
+        "transactions": ["delivery"],
+        "price": "$",
+        "location": {
+            "address1": "1457 Florence Ave",
+            "address2": "Ste 109",
+            "address3": "",
+            "city": "Los Angeles",
+            "zip_code": "90001",
+            "country": "US",
+            "state": "CA",
+            "display_address": [
+                "1457 Florence Ave",
+                "Ste 109",
+                "Los Angeles, CA 90001"
+            ]
+        },
+        "phone": "+13235829200",
+        "display_phone": "(323) 582-9200",
+        "distance": 150.4160054507522
+    },
+    {
+        "id": "dE-OTk-I72n19VIzTqCkJQ",
+        "alias": "new-milenio-pizza-south-gate",
+        "name": "New Milenio Pizza",
+        "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/shOSDEvN6F-e1b-pC5Y6Rw/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/new-milenio-pizza-south-gate?adjust_creative=R6D4r9_3fLJt7LnAmpdrJg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=R6D4r9_3fLJt7LnAmpdrJg",
+        "review_count": 33,
+        "categories": [{ "alias": "pizza", "title": "Pizza" }],
+        "rating": 4.5,
+        "coordinates": { "latitude": 33.9599792, "longitude": -118.222067 },
+        "transactions": ["delivery"],
+        "price": "$",
+        "location": {
+            "address1": "8532 Long Beach Blvd",
+            "address2": null,
+            "address3": null,
+            "city": "South Gate",
+            "zip_code": "90280",
+            "country": "US",
+            "state": "CA",
+            "display_address": ["8532 Long Beach Blvd", "South Gate, CA 90280"]
+        },
+        "phone": "+13235810731",
+        "display_phone": "(323) 581-0731",
+        "distance": 2819.55109795193
+    },
+    {
+        "id": "alv82yOjew9TmqSsTRK09A",
+        "alias": "lalis-pizza-huntington-park",
+        "name": "Lalis Pizza",
+        "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/jnfjcGEK9saVd2hCCGZfeA/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/lalis-pizza-huntington-park?adjust_creative=R6D4r9_3fLJt7LnAmpdrJg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=R6D4r9_3fLJt7LnAmpdrJg",
+        "review_count": 47,
+        "categories": [{ "alias": "pizza", "title": "Pizza" }],
+        "rating": 4,
+        "coordinates": { "latitude": 33.96435, "longitude": -118.204412037037 },
+        "transactions": ["delivery"],
+        "price": "$",
+        "location": {
+            "address1": "7902 California Ave",
+            "address2": "",
+            "address3": null,
+            "city": "Huntington Park",
+            "zip_code": "90255",
+            "country": "US",
+            "state": "CA",
+            "display_address": [
+                "7902 California Ave",
+                "Huntington Park, CA 90255"
+            ]
+        },
+        "phone": "+13237496335",
+        "display_phone": "(323) 749-6335",
+        "distance": 4120.843429598288
+    },
+    {
+        "id": "WoWDawobOUDnGLpCmwfxfQ",
+        "alias": "chicos-pizza-parlor-lynwood",
+        "name": "Chico's Pizza Parlor",
+        "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/EAMrAf5Z4Zb5e9Z9QTs3TA/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/chicos-pizza-parlor-lynwood?adjust_creative=R6D4r9_3fLJt7LnAmpdrJg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=R6D4r9_3fLJt7LnAmpdrJg",
+        "review_count": 316,
+        "categories": [
+            { "alias": "pizza", "title": "Pizza" },
+            { "alias": "chicken_wings", "title": "Chicken Wings" },
+            { "alias": "italian", "title": "Italian" }
+        ],
+        "rating": 3.5,
+        "coordinates": { "latitude": 33.91736, "longitude": -118.20895 },
+        "transactions": ["delivery"],
+        "price": "$$",
+        "location": {
+            "address1": "12120 Long Beach Blvd",
+            "address2": "",
+            "address3": "",
+            "city": "Lynwood",
+            "zip_code": "90262",
+            "country": "US",
+            "state": "CA",
+            "display_address": ["12120 Long Beach Blvd", "Lynwood, CA 90262"]
+        },
+        "phone": "+13106398400",
+        "display_phone": "(310) 639-8400",
+        "distance": 4925.999855799998
+    },
+    {
+        "id": "LQDqi2RYGG92Lp0E30jH8A",
+        "alias": "piara-pizza-compton",
+        "name": "Piara Pizza",
+        "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/-_27IxiyWecGeTk8uiovFw/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/piara-pizza-compton?adjust_creative=R6D4r9_3fLJt7LnAmpdrJg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=R6D4r9_3fLJt7LnAmpdrJg",
+        "review_count": 40,
+        "categories": [{ "alias": "pizza", "title": "Pizza" }],
+        "rating": 4,
+        "coordinates": {
+            "latitude": 33.9077949523926,
+            "longitude": -118.209632873535
+        },
+        "transactions": ["pickup", "delivery"],
+        "price": "$",
+        "location": {
+            "address1": "1721 N Long Beach Blvd",
+            "address2": "",
+            "address3": "",
+            "city": "Compton",
+            "zip_code": "90221",
+            "country": "US",
+            "state": "CA",
+            "display_address": ["1721 N Long Beach Blvd", "Compton, CA 90221"]
+        },
+        "phone": "+13107634444",
+        "display_phone": "(310) 763-4444",
+        "distance": 5712.61431460218
+    },
+    {
+        "id": "RGdGUZIIY6jh06a8I9MFaw",
+        "alias": "pizza-king-los-angeles-2",
+        "name": "Pizza King",
+        "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/WkYKpy3ppt_wVljG2s0phg/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/pizza-king-los-angeles-2?adjust_creative=R6D4r9_3fLJt7LnAmpdrJg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=R6D4r9_3fLJt7LnAmpdrJg",
+        "review_count": 124,
+        "categories": [
+            { "alias": "pizza", "title": "Pizza" },
+            { "alias": "chicken_wings", "title": "Chicken Wings" }
+        ],
+        "rating": 3.5,
+        "coordinates": { "latitude": 33.9165549, "longitude": -118.2657999 },
+        "transactions": ["delivery"],
+        "price": "$",
+        "location": {
+            "address1": "441 E El Segundo Blvd",
+            "address2": "",
+            "address3": "",
+            "city": "Los Angeles",
+            "zip_code": "90061",
+            "country": "US",
+            "state": "CA",
+            "display_address": [
+                "441 E El Segundo Blvd",
+                "Los Angeles, CA 90061"
+            ]
+        },
+        "phone": "+13237570260",
+        "display_phone": "(323) 757-0260",
+        "distance": 4067.2560801641343
+    },
+    {
+        "id": "G6RuoIGV5fX7TqyzWpgeaw",
+        "alias": "tumbys-pizza-los-angeles",
+        "name": "Tumby's Pizza",
+        "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/Fv7_J490xbB6VbDi_Y0MVw/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/tumbys-pizza-los-angeles?adjust_creative=R6D4r9_3fLJt7LnAmpdrJg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=R6D4r9_3fLJt7LnAmpdrJg",
+        "review_count": 59,
+        "categories": [{ "alias": "pizza", "title": "Pizza" }],
+        "rating": 3.5,
+        "coordinates": { "latitude": 33.960672, "longitude": -118.283277 },
+        "transactions": ["delivery", "pickup"],
+        "price": "$",
+        "location": {
+            "address1": "8509 S Figueroa St",
+            "address2": "",
+            "address3": "",
+            "city": "Los Angeles",
+            "zip_code": "90044",
+            "country": "US",
+            "state": "CA",
+            "display_address": ["8509 S Figueroa St", "Los Angeles, CA 90044"]
+        },
+        "phone": "+13237592651",
+        "display_phone": "(323) 759-2651",
+        "distance": 3669.506296438233
+    },
+    {
+        "id": "s-nSluuP5yRFqcdPOMbWNQ",
+        "alias": "otto-s-pizza-stix-los-angeles-2",
+        "name": "Otto’s Pizza Stix",
+        "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/Pyz-L6Z93FNEAq3jyImqyA/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/otto-s-pizza-stix-los-angeles-2?adjust_creative=R6D4r9_3fLJt7LnAmpdrJg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=R6D4r9_3fLJt7LnAmpdrJg",
+        "review_count": 8,
+        "categories": [
+            { "alias": "foodtrucks", "title": "Food Trucks" },
+            { "alias": "pizza", "title": "Pizza" }
+        ],
+        "rating": 5,
+        "coordinates": {
+            "latitude": 34.0624708095338,
+            "longitude": -118.358365834324
+        },
+        "transactions": ["delivery"],
+        "location": {
+            "address1": "5900 Wilshire Blvd",
+            "address2": null,
+            "address3": "",
+            "city": "Los Angeles",
+            "zip_code": "90036",
+            "country": "US",
+            "state": "CA",
+            "display_address": ["5900 Wilshire Blvd", "Los Angeles, CA 90036"]
+        },
+        "phone": "+15623490635",
+        "display_phone": "(562) 349-0635",
+        "distance": 16291.744135253906
+    },
+    {
+        "id": "_WHaiir4xXnBuv6PmbWuKA",
+        "alias": "piara-pizza-huntington-park",
+        "name": "Piara Pizza",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/rzQ0U_oq-fO7krWPQjBHMw/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/piara-pizza-huntington-park?adjust_creative=R6D4r9_3fLJt7LnAmpdrJg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=R6D4r9_3fLJt7LnAmpdrJg",
+        "review_count": 21,
+        "categories": [{ "alias": "pizza", "title": "Pizza" }],
+        "rating": 3.5,
+        "coordinates": { "latitude": 33.9808758, "longitude": -118.2301651 },
+        "transactions": ["pickup", "delivery"],
+        "price": "$",
+        "location": {
+            "address1": "6434 Santa Fe Ave",
+            "address2": null,
+            "address3": "",
+            "city": "Huntington Park",
+            "zip_code": "90255",
+            "country": "US",
+            "state": "CA",
+            "display_address": [
+                "6434 Santa Fe Ave",
+                "Huntington Park, CA 90255"
+            ]
+        },
+        "phone": "+13232778080",
+        "display_phone": "(323) 277-8080",
+        "distance": 3785.1142100753236
+    },
+    {
+        "id": "Q1IDgXTBfFyDTXqi_iKORA",
+        "alias": "pizza-mia-huntington-park-3",
+        "name": "Pizza Mia",
+        "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/XU7K4F184JPGZXF3zF1pqQ/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/pizza-mia-huntington-park-3?adjust_creative=R6D4r9_3fLJt7LnAmpdrJg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=R6D4r9_3fLJt7LnAmpdrJg",
+        "review_count": 33,
+        "categories": [
+            { "alias": "italian", "title": "Italian" },
+            { "alias": "pizza", "title": "Pizza" },
+            { "alias": "sportsbars", "title": "Sports Bars" }
+        ],
+        "rating": 3.5,
+        "coordinates": { "latitude": 33.9728317, "longitude": -118.2149963 },
+        "transactions": ["delivery", "pickup"],
+        "price": "$",
+        "location": {
+            "address1": "3006 E Florence Ave",
+            "address2": null,
+            "address3": "",
+            "city": "Huntington Park",
+            "zip_code": "90255",
+            "country": "US",
+            "state": "CA",
+            "display_address": [
+                "3006 E Florence Ave",
+                "Huntington Park, CA 90255"
+            ]
+        },
+        "phone": "+13235856666",
+        "display_phone": "(323) 585-6666",
+        "distance": 3845.5222478192054
+    },
+    {
+        "id": "TkpMcQhZ_8Hu3um0m2JVfw",
+        "alias": "tumbys-pizza-los-angeles-3",
+        "name": "Tumby's Pizza",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/Wdc5ZoC_RfhKRGUkLtuzTA/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/tumbys-pizza-los-angeles-3?adjust_creative=R6D4r9_3fLJt7LnAmpdrJg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=R6D4r9_3fLJt7LnAmpdrJg",
+        "review_count": 124,
+        "categories": [
+            { "alias": "pizza", "title": "Pizza" },
+            { "alias": "italian", "title": "Italian" },
+            { "alias": "sandwiches", "title": "Sandwiches" }
+        ],
+        "rating": 4,
+        "coordinates": { "latitude": 33.96285, "longitude": -118.30863 },
+        "transactions": ["delivery", "pickup"],
+        "price": "$",
+        "location": {
+            "address1": "8326 S Western Ave",
+            "address2": null,
+            "address3": null,
+            "city": "Los Angeles",
+            "zip_code": "90047",
+            "country": "US",
+            "state": "CA",
+            "display_address": ["8326 S Western Ave", "Los Angeles, CA 90047"]
+        },
+        "phone": "+13237896409",
+        "display_phone": "(323) 789-6409",
+        "distance": 3307.9269149153306
+    },
+    {
+        "id": "eUSAIHvAjHawTvXZ9r_MTQ",
+        "alias": "pizzamania-los-angeles",
+        "name": "Pizzamania",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/c5yhcu8E9JY6CLnr9sLnBQ/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/pizzamania-los-angeles?adjust_creative=R6D4r9_3fLJt7LnAmpdrJg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=R6D4r9_3fLJt7LnAmpdrJg",
+        "review_count": 65,
+        "categories": [{ "alias": "pizza", "title": "Pizza" }],
+        "rating": 3,
+        "coordinates": {
+            "latitude": 33.9758529663086,
+            "longitude": -118.26927947998
+        },
+        "transactions": ["delivery", "pickup"],
+        "price": "$",
+        "location": {
+            "address1": "7008 S San Pedro St",
+            "address2": "",
+            "address3": "",
+            "city": "Los Angeles",
+            "zip_code": "90003",
+            "country": "US",
+            "state": "CA",
+            "display_address": ["7008 S San Pedro St", "Los Angeles, CA 90003"]
+        },
+        "phone": "+13237783081",
+        "display_phone": "(323) 778-3081",
+        "distance": 1377.6689482782183
+    },
+    {
+        "id": "YOCYUgXEO_L3VjWw-GkxrA",
+        "alias": "pronto-pizza-los-angeles-8",
+        "name": "Pronto Pizza",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/TfMj2VmXA1ov7bFEvB_J-Q/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/pronto-pizza-los-angeles-8?adjust_creative=R6D4r9_3fLJt7LnAmpdrJg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=R6D4r9_3fLJt7LnAmpdrJg",
+        "review_count": 26,
+        "categories": [{ "alias": "pizza", "title": "Pizza" }],
+        "rating": 3,
+        "coordinates": { "latitude": 33.9600682, "longitude": -118.2633503 },
+        "transactions": ["delivery"],
+        "price": "$",
+        "location": {
+            "address1": "680 E Manchester Ave",
+            "address2": "",
+            "address3": "",
+            "city": "Los Angeles",
+            "zip_code": "90002",
+            "country": "US",
+            "state": "CA",
+            "display_address": ["680 E Manchester Ave", "Los Angeles, CA 90002"]
+        },
+        "phone": "+13234513964",
+        "display_phone": "(323) 451-3964",
+        "distance": 982.1471075241037
+    },
+    {
+        "id": "dztACiNEQsEXC50KAKIWkQ",
+        "alias": "ell-sole-bakery-los-angeles",
+        "name": "Ell Sole Bakery",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/YTIjP_VZoWnFAkVb86ZMbA/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/ell-sole-bakery-los-angeles?adjust_creative=R6D4r9_3fLJt7LnAmpdrJg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=R6D4r9_3fLJt7LnAmpdrJg",
+        "review_count": 8,
+        "categories": [{ "alias": "pizza", "title": "Pizza" }],
+        "rating": 4.5,
+        "coordinates": { "latitude": 34.004, "longitude": -118.28448 },
+        "transactions": [],
+        "price": "$$",
+        "location": {
+            "address1": "611 W Vernon Ave",
+            "address2": "",
+            "address3": "",
+            "city": "Los Angeles",
+            "zip_code": "90037",
+            "country": "US",
+            "state": "CA",
+            "display_address": ["611 W Vernon Ave", "Los Angeles, CA 90037"]
+        },
+        "phone": "",
+        "display_phone": "",
+        "distance": 4580.357460833883
+    },
+    {
+        "id": "t7gFp6CcNd1vyJUdLUI5-Q",
+        "alias": "little-caesars-pizza-los-angeles-27",
+        "name": "Little Caesars Pizza",
+        "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/SotojCDLql43uEXdkp3vTw/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/little-caesars-pizza-los-angeles-27?adjust_creative=R6D4r9_3fLJt7LnAmpdrJg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=R6D4r9_3fLJt7LnAmpdrJg",
+        "review_count": 14,
+        "categories": [
+            { "alias": "pizza", "title": "Pizza" },
+            { "alias": "hotdogs", "title": "Fast Food" }
+        ],
+        "rating": 2.5,
+        "coordinates": { "latitude": 33.9601448, "longitude": -118.2767193 },
+        "transactions": ["delivery"],
+        "price": "$",
+        "location": {
+            "address1": "183 W. Manchester",
+            "address2": "",
+            "address3": "",
+            "city": "Los Angeles",
+            "zip_code": "90033",
+            "country": "US",
+            "state": "CA",
+            "display_address": ["183 W. Manchester", "Los Angeles, CA 90033"]
+        },
+        "phone": "+13235410928",
+        "display_phone": "(323) 541-0928",
+        "distance": 538.0547861680134
+    },
+    {
+        "id": "rJmSUVNMP731ei7tJ6SW6g",
+        "alias": "dominos-pizza-los-angeles-25",
+        "name": "Domino's Pizza",
+        "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/OBTUvXApgRGQYKyjdfpnrQ/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/dominos-pizza-los-angeles-25?adjust_creative=R6D4r9_3fLJt7LnAmpdrJg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=R6D4r9_3fLJt7LnAmpdrJg",
+        "review_count": 121,
+        "categories": [
+            { "alias": "pizza", "title": "Pizza" },
+            { "alias": "chicken_wings", "title": "Chicken Wings" },
+            { "alias": "sandwiches", "title": "Sandwiches" }
+        ],
+        "rating": 1.5,
+        "coordinates": { "latitude": 33.992941, "longitude": -118.283028 },
+        "transactions": [],
+        "price": "$",
+        "location": {
+            "address1": "5401 S Figueroa St",
+            "address2": "",
+            "address3": "",
+            "city": "Los Angeles",
+            "zip_code": "90037",
+            "country": "US",
+            "state": "CA",
+            "display_address": ["5401 S Figueroa St", "Los Angeles, CA 90037"]
+        },
+        "phone": "+13237536888",
+        "display_phone": "(323) 753-6888",
+        "distance": 3364.6560361752167
+    },
+    {
+        "id": "qKC84EP5FoPEtExZHwd_wA",
+        "alias": "piara-pizza-los-angeles-3",
+        "name": "Piara Pizza",
+        "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/0sOiUL9x1hPjZWEYlq4Tkw/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/piara-pizza-los-angeles-3?adjust_creative=R6D4r9_3fLJt7LnAmpdrJg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=R6D4r9_3fLJt7LnAmpdrJg",
+        "review_count": 19,
+        "categories": [
+            { "alias": "chicken_wings", "title": "Chicken Wings" },
+            { "alias": "pizza", "title": "Pizza" }
+        ],
+        "rating": 3.5,
+        "coordinates": { "latitude": 33.933382, "longitude": -118.265617 },
+        "transactions": ["pickup", "delivery"],
+        "price": "$",
+        "location": {
+            "address1": "11151 Avalon Blvd",
+            "address2": null,
+            "address3": "",
+            "city": "Los Angeles",
+            "zip_code": "90061",
+            "country": "US",
+            "state": "CA",
+            "display_address": ["11151 Avalon Blvd", "Los Angeles, CA 90061"]
+        },
+        "phone": "+13232421200",
+        "display_phone": "(323) 242-1200",
+        "distance": 3485.7432424822073
+    },
+    {
+        "id": "hHnzbBLmC-gB8XgVidrmvA",
+        "alias": "cafe-avalon-los-angeles",
+        "name": "Cafe Avalon",
+        "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/ifhbIT3VGS-diLYangBhAg/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/cafe-avalon-los-angeles?adjust_creative=R6D4r9_3fLJt7LnAmpdrJg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=R6D4r9_3fLJt7LnAmpdrJg",
+        "review_count": 14,
+        "categories": [
+            { "alias": "pizza", "title": "Pizza" },
+            { "alias": "cafes", "title": "Cafes" },
+            { "alias": "icecream", "title": "Ice Cream & Frozen Yogurt" }
+        ],
+        "rating": 3.5,
+        "coordinates": {
+            "latitude": 33.986594433184926,
+            "longitude": -118.26536927340676
+        },
+        "transactions": ["pickup", "delivery"],
+        "price": "$",
+        "location": {
+            "address1": "5943 S Avalon Blvd",
+            "address2": "",
+            "address3": "",
+            "city": "Los Angeles",
+            "zip_code": "90003",
+            "country": "US",
+            "state": "CA",
+            "display_address": ["5943 S Avalon Blvd", "Los Angeles, CA 90003"]
+        },
+        "phone": "+13232317569",
+        "display_phone": "(323) 231-7569",
+        "distance": 2624.050397186745
+    },
+    {
+        "id": "w5AOl27CJY9CLfmfny_n6Q",
+        "alias": "jinos-pizza-los-angeles-2",
+        "name": "Jino's Pizza",
+        "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/bJ9o_rrRArYzzmRE3jqDDA/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/jinos-pizza-los-angeles-2?adjust_creative=R6D4r9_3fLJt7LnAmpdrJg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=R6D4r9_3fLJt7LnAmpdrJg",
+        "review_count": 57,
+        "categories": [{ "alias": "pizza", "title": "Pizza" }],
+        "rating": 2.5,
+        "coordinates": { "latitude": 33.960374, "longitude": -118.308562 },
+        "transactions": ["delivery", "pickup"],
+        "price": "$",
+        "location": {
+            "address1": "8522 S Western Ave",
+            "address2": "Unit C",
+            "address3": "",
+            "city": "Los Angeles",
+            "zip_code": "90047",
+            "country": "US",
+            "state": "CA",
+            "display_address": [
+                "8522 S Western Ave",
+                "Unit C",
+                "Los Angeles, CA 90047"
+            ]
+        },
+        "phone": "+13237599600",
+        "display_phone": "(323) 759-9600",
+        "distance": 3305.0306248652637
+    },
+    {
+        "id": "UJKnVXcVZF1gCkmeRFfj5Q",
+        "alias": "dominos-pizza-los-angeles-17",
+        "name": "Domino's Pizza",
+        "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/kOBvu6SefWGWtERmEd0Qmw/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/dominos-pizza-los-angeles-17?adjust_creative=R6D4r9_3fLJt7LnAmpdrJg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=R6D4r9_3fLJt7LnAmpdrJg",
+        "review_count": 130,
+        "categories": [
+            { "alias": "pizza", "title": "Pizza" },
+            { "alias": "chicken_wings", "title": "Chicken Wings" },
+            { "alias": "sandwiches", "title": "Sandwiches" }
+        ],
+        "rating": 1.5,
+        "coordinates": { "latitude": 33.95975, "longitude": -118.29056 },
+        "transactions": [],
+        "price": "$",
+        "location": {
+            "address1": "950 W Manchester Ave",
+            "address2": "",
+            "address3": "",
+            "city": "Los Angeles",
+            "zip_code": "90044",
+            "country": "US",
+            "state": "CA",
+            "display_address": ["950 W Manchester Ave", "Los Angeles, CA 90044"]
+        },
+        "phone": "+13237585500",
+        "display_phone": "(323) 758-5500",
+        "distance": 1697.4013046415191
+    },
+    {
+        "id": "88kri8FhXy8b3DQ_QjSMmQ",
+        "alias": "l-antica-pizzeria-da-michele-los-angeles-2",
+        "name": "L'Antica Pizzeria Da Michele",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/SCuuHjFSwNpuYxpncVDs9w/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/l-antica-pizzeria-da-michele-los-angeles-2?adjust_creative=R6D4r9_3fLJt7LnAmpdrJg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=R6D4r9_3fLJt7LnAmpdrJg",
+        "review_count": 1952,
+        "categories": [
+            { "alias": "pizza", "title": "Pizza" },
+            { "alias": "italian", "title": "Italian" },
+            { "alias": "breakfast_brunch", "title": "Breakfast & Brunch" }
+        ],
+        "rating": 4.5,
+        "coordinates": {
+            "latitude": 34.09907097431642,
+            "longitude": -118.3373093612014
+        },
+        "transactions": ["delivery", "pickup"],
+        "price": "$$$",
+        "location": {
+            "address1": "1534 N Mccadden Pl",
+            "address2": "",
+            "address3": null,
+            "city": "Los Angeles",
+            "zip_code": "90028",
+            "country": "US",
+            "state": "CA",
+            "display_address": ["1534 N Mccadden Pl", "Los Angeles, CA 90028"]
+        },
+        "phone": "+13233662408",
+        "display_phone": "(323) 366-2408",
+        "distance": 3591.543419580299
+    },
+    {
+        "id": "fD4ntpbf92ufSHn5tSmSxA",
+        "alias": "desano-pizza-bakery-los-angeles",
+        "name": "DeSano Pizza Bakery",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/cSdJY7bdr3YQAc_7qFNudQ/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/desano-pizza-bakery-los-angeles?adjust_creative=R6D4r9_3fLJt7LnAmpdrJg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=R6D4r9_3fLJt7LnAmpdrJg",
+        "review_count": 1705,
+        "categories": [
+            { "alias": "pizza", "title": "Pizza" },
+            { "alias": "italian", "title": "Italian" }
+        ],
+        "rating": 4.5,
+        "coordinates": {
+            "latitude": 34.0910099739038,
+            "longitude": -118.297762911045
+        },
+        "transactions": ["delivery", "pickup"],
+        "price": "$$",
+        "location": {
+            "address1": "4959 Santa Monica Blvd",
+            "address2": null,
+            "address3": "",
+            "city": "Los Angeles",
+            "zip_code": "90029",
+            "country": "US",
+            "state": "CA",
+            "display_address": [
+                "4959 Santa Monica Blvd",
+                "Los Angeles, CA 90029"
+            ]
+        },
+        "phone": "+13239137000",
+        "display_phone": "(323) 913-7000",
+        "distance": 2019.2300594321914
+    },
+    {
+        "id": "GKQApReu8U9hip4A2ApJ_A",
+        "alias": "osteria-la-buca-los-angeles-2",
+        "name": "Osteria La Buca",
+        "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/xeVaSq6kS6WuT3OFj7yPJg/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/osteria-la-buca-los-angeles-2?adjust_creative=R6D4r9_3fLJt7LnAmpdrJg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=R6D4r9_3fLJt7LnAmpdrJg",
+        "review_count": 2241,
+        "categories": [
+            { "alias": "italian", "title": "Italian" },
+            { "alias": "pizza", "title": "Pizza" },
+            { "alias": "cocktailbars", "title": "Cocktail Bars" }
+        ],
+        "rating": 4,
+        "coordinates": {
+            "latitude": 34.0833366755519,
+            "longitude": -118.31393718099
+        },
+        "transactions": ["delivery", "pickup"],
+        "price": "$$$",
+        "location": {
+            "address1": "5210 Melrose Ave",
+            "address2": "",
+            "address3": "",
+            "city": "Los Angeles",
+            "zip_code": "90038",
+            "country": "US",
+            "state": "CA",
+            "display_address": ["5210 Melrose Ave", "Los Angeles, CA 90038"]
+        },
+        "phone": "+13234621900",
+        "display_phone": "(323) 462-1900",
+        "distance": 893.8706634162063
+    },
+    {
+        "id": "q8buTNBt3FU9vie0D5OOxA",
+        "alias": "pizzeria-mozza-los-angeles-4",
+        "name": "Pizzeria Mozza",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/wjpXUOwfRrGguZxonP4d7Q/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/pizzeria-mozza-los-angeles-4?adjust_creative=R6D4r9_3fLJt7LnAmpdrJg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=R6D4r9_3fLJt7LnAmpdrJg",
+        "review_count": 4593,
+        "categories": [{ "alias": "pizza", "title": "Pizza" }],
+        "rating": 4,
+        "coordinates": { "latitude": 34.083107, "longitude": -118.338883 },
+        "transactions": ["delivery"],
+        "price": "$$",
+        "location": {
+            "address1": "641 N Highland Ave",
+            "address2": "",
+            "address3": "",
+            "city": "Los Angeles",
+            "zip_code": "90036",
+            "country": "US",
+            "state": "CA",
+            "display_address": ["641 N Highland Ave", "Los Angeles, CA 90036"]
+        },
+        "phone": "+13232970101",
+        "display_phone": "(323) 297-0101",
+        "distance": 2770.2872659424843
+    },
+    {
+        "id": "CbW8U0QAwh5XRkaLt0xNZA",
+        "alias": "masa-of-echo-park-los-angeles",
+        "name": "Masa of Echo Park",
+        "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/BlTm-09OBzRGHAHxoqZ52g/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/masa-of-echo-park-los-angeles?adjust_creative=R6D4r9_3fLJt7LnAmpdrJg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=R6D4r9_3fLJt7LnAmpdrJg",
+        "review_count": 4678,
+        "categories": [{ "alias": "pizza", "title": "Pizza" }],
+        "rating": 4,
+        "coordinates": { "latitude": 34.077585, "longitude": -118.259599 },
+        "transactions": ["pickup"],
+        "price": "$$",
+        "location": {
+            "address1": "1800 W Sunset Blvd",
+            "address2": null,
+            "address3": "",
+            "city": "Los Angeles",
+            "zip_code": "90026",
+            "country": "US",
+            "state": "CA",
+            "display_address": ["1800 W Sunset Blvd", "Los Angeles, CA 90026"]
+        },
+        "phone": "+12139891558",
+        "display_phone": "(213) 989-1558",
+        "distance": 4650.156587191758
+    },
+    {
+        "id": "e0Vs3U-XkLkZ7EJ6JgPAYQ",
+        "alias": "olivia-los-angeles-3",
+        "name": "Olivia",
+        "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/TqEV9QnyzWdFOrCqb3BpIQ/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/olivia-los-angeles-3?adjust_creative=R6D4r9_3fLJt7LnAmpdrJg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=R6D4r9_3fLJt7LnAmpdrJg",
+        "review_count": 170,
+        "categories": [
+            { "alias": "vegetarian", "title": "Vegetarian" },
+            { "alias": "pizza", "title": "Pizza" },
+            { "alias": "wine_bars", "title": "Wine Bars" }
+        ],
+        "rating": 5,
+        "coordinates": { "latitude": 34.07033, "longitude": -118.292183 },
+        "transactions": ["restaurant_reservation"],
+        "price": "$$",
+        "location": {
+            "address1": "205 S Vermont Ave",
+            "address2": "",
+            "address3": null,
+            "city": "Los Angeles",
+            "zip_code": "90004",
+            "country": "US",
+            "state": "CA",
+            "display_address": ["205 S Vermont Ave", "Los Angeles, CA 90004"]
+        },
+        "phone": "+12132771723",
+        "display_phone": "(213) 277-1723",
+        "distance": 1762.133508564436
+    },
+    {
+        "id": "P9Dt_kkU5BTe1v0tJ4KFNw",
+        "alias": "angelini-osteria-los-angeles",
+        "name": "Angelini Osteria",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/1Mh9UEn1H74pTCsfD5h7bg/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/angelini-osteria-los-angeles?adjust_creative=R6D4r9_3fLJt7LnAmpdrJg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=R6D4r9_3fLJt7LnAmpdrJg",
+        "review_count": 2126,
+        "categories": [
+            { "alias": "italian", "title": "Italian" },
+            { "alias": "wine_bars", "title": "Wine Bars" },
+            { "alias": "pizza", "title": "Pizza" }
+        ],
+        "rating": 4,
+        "coordinates": { "latitude": 34.07642, "longitude": -118.34909 },
+        "transactions": ["pickup"],
+        "price": "$$$",
+        "location": {
+            "address1": "7313 Beverly Blvd",
+            "address2": "",
+            "address3": "",
+            "city": "Los Angeles",
+            "zip_code": "90036",
+            "country": "US",
+            "state": "CA",
+            "display_address": ["7313 Beverly Blvd", "Los Angeles, CA 90036"]
+        },
+        "phone": "+13232970070",
+        "display_phone": "(323) 297-0070",
+        "distance": 3600.2524719309317
+    },
+    {
+        "id": "dFqZkxAOHHAi2oBm0XuzCQ",
+        "alias": "farina-pizza-los-angeles",
+        "name": "Farina Pizza",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/nY_1qt_-onhidsJDTKoe8Q/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/farina-pizza-los-angeles?adjust_creative=R6D4r9_3fLJt7LnAmpdrJg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=R6D4r9_3fLJt7LnAmpdrJg",
+        "review_count": 117,
+        "categories": [{ "alias": "pizza", "title": "Pizza" }],
+        "rating": 4.5,
+        "coordinates": { "latitude": 34.07242, "longitude": -118.30931 },
+        "transactions": ["delivery"],
+        "location": {
+            "address1": "119 S Western Ave",
+            "address2": null,
+            "address3": "",
+            "city": "Los Angeles",
+            "zip_code": "90004",
+            "country": "US",
+            "state": "CA",
+            "display_address": ["119 S Western Ave", "Los Angeles, CA 90004"]
+        },
+        "phone": "+12139150052",
+        "display_phone": "(213) 915-0052",
+        "distance": 399.1115398241966
+    },
+    {
+        "id": "gAb-NtuNbNG8p2dqUMQGjw",
+        "alias": "palermo-italian-restaurant-los-angeles-2",
+        "name": "Palermo Italian Restaurant",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/m1xgemC36RST9oQPS7hrvA/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/palermo-italian-restaurant-los-angeles-2?adjust_creative=R6D4r9_3fLJt7LnAmpdrJg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=R6D4r9_3fLJt7LnAmpdrJg",
+        "review_count": 1751,
+        "categories": [
+            { "alias": "italian", "title": "Italian" },
+            { "alias": "pizza", "title": "Pizza" }
+        ],
+        "rating": 4,
+        "coordinates": { "latitude": 34.10481, "longitude": -118.291447 },
+        "transactions": ["delivery", "pickup"],
+        "price": "$$",
+        "location": {
+            "address1": "1858 N Vermont Ave",
+            "address2": "",
+            "address3": "",
+            "city": "Los Angeles",
+            "zip_code": "90027",
+            "country": "US",
+            "state": "CA",
+            "display_address": ["1858 N Vermont Ave", "Los Angeles, CA 90027"]
+        },
+        "phone": "+13236631430",
+        "display_phone": "(323) 663-1430",
+        "distance": 3635.737089415822
+    },
+    {
+        "id": "1t89y1JeBGBC4aEbBNZjRg",
+        "alias": "ronan-los-angeles",
+        "name": "Ronan",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/kiw3W5x4xib1yRUgR5Ag7g/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/ronan-los-angeles?adjust_creative=R6D4r9_3fLJt7LnAmpdrJg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=R6D4r9_3fLJt7LnAmpdrJg",
+        "review_count": 315,
+        "categories": [
+            { "alias": "pizza", "title": "Pizza" },
+            { "alias": "cocktailbars", "title": "Cocktail Bars" },
+            { "alias": "newamerican", "title": "American (New)" }
+        ],
+        "rating": 4,
+        "coordinates": {
+            "latitude": 34.0838245114268,
+            "longitude": -118.349283778822
+        },
+        "transactions": ["delivery", "pickup"],
+        "price": "$$",
+        "location": {
+            "address1": "7315 Melrose Ave",
+            "address2": "",
+            "address3": null,
+            "city": "Los Angeles",
+            "zip_code": "90046",
+            "country": "US",
+            "state": "CA",
+            "display_address": ["7315 Melrose Ave", "Los Angeles, CA 90046"]
+        },
+        "phone": "+13239175100",
+        "display_phone": "(323) 917-5100",
+        "distance": 3717.3036376023083
+    },
+    {
+        "id": "clJmJd_tbaK34j1CN-9MYQ",
+        "alias": "korea-town-pizza-company-los-angeles-2",
+        "name": "Korea Town Pizza Company",
+        "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/X8oqd2hJqfm8FJyUpRoCdQ/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/korea-town-pizza-company-los-angeles-2?adjust_creative=R6D4r9_3fLJt7LnAmpdrJg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=R6D4r9_3fLJt7LnAmpdrJg",
+        "review_count": 526,
+        "categories": [
+            { "alias": "pizza", "title": "Pizza" },
+            { "alias": "bars", "title": "Bars" },
+            { "alias": "burgers", "title": "Burgers" }
+        ],
+        "rating": 4,
+        "coordinates": { "latitude": 34.0613398, "longitude": -118.3113545 },
+        "transactions": ["delivery", "pickup"],
+        "price": "$$",
+        "location": {
+            "address1": "3900 Wilshire Blvd",
+            "address2": "",
+            "address3": null,
+            "city": "Los Angeles",
+            "zip_code": "90010",
+            "country": "US",
+            "state": "CA",
+            "display_address": ["3900 Wilshire Blvd", "Los Angeles, CA 90010"]
+        },
+        "phone": "+12137380077",
+        "display_phone": "(213) 738-0077",
+        "distance": 1631.2764575755173
+    },
+    {
+        "id": "YTTCdnu8457jbdEbm_PIig",
+        "alias": "della-terra-restaurant-los-angeles",
+        "name": "Della Terra Restaurant",
+        "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/Np31-r1QgAHxf-dj-LyjbA/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/della-terra-restaurant-los-angeles?adjust_creative=R6D4r9_3fLJt7LnAmpdrJg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=R6D4r9_3fLJt7LnAmpdrJg",
+        "review_count": 865,
+        "categories": [
+            { "alias": "italian", "title": "Italian" },
+            { "alias": "pizza", "title": "Pizza" },
+            { "alias": "pastashops", "title": "Pasta Shops" }
+        ],
+        "rating": 4,
+        "coordinates": { "latitude": 34.0762749, "longitude": -118.3571066 },
+        "transactions": ["delivery", "pickup"],
+        "price": "$$",
+        "location": {
+            "address1": "7675 Beverly Blvd",
+            "address2": "",
+            "address3": "",
+            "city": "Los Angeles",
+            "zip_code": "90036",
+            "country": "US",
+            "state": "CA",
+            "display_address": ["7675 Beverly Blvd", "Los Angeles, CA 90036"]
+        },
+        "phone": "+13239337675",
+        "display_phone": "(323) 933-7675",
+        "distance": 4346.520983713906
+    },
+    {
+        "id": "v5JaR9R_p0dnyDtefjtF9A",
+        "alias": "blackbird-pizza-shop-los-angeles",
+        "name": "Blackbird Pizza Shop",
+        "image_url": "https://s3-media1.fl.yelpcdn.com/bphoto/RukckMDBdxIyNfskKCOHyQ/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/blackbird-pizza-shop-los-angeles?adjust_creative=R6D4r9_3fLJt7LnAmpdrJg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=R6D4r9_3fLJt7LnAmpdrJg",
+        "review_count": 502,
+        "categories": [
+            { "alias": "pizza", "title": "Pizza" },
+            { "alias": "salad", "title": "Salad" },
+            { "alias": "chicken_wings", "title": "Chicken Wings" }
+        ],
+        "rating": 4.5,
+        "coordinates": { "latitude": 34.08387, "longitude": -118.35253 },
+        "transactions": ["delivery", "pickup"],
+        "price": "$$",
+        "location": {
+            "address1": "7459 Melrose Ave",
+            "address2": "",
+            "address3": null,
+            "city": "Los Angeles",
+            "zip_code": "90046",
+            "country": "US",
+            "state": "CA",
+            "display_address": ["7459 Melrose Ave", "Los Angeles, CA 90046"]
+        },
+        "phone": "+13234247184",
+        "display_phone": "(323) 424-7184",
+        "distance": 4009.625159479841
+    },
+    {
+        "id": "XN31yqCpt4_aOJDoceuCvw",
+        "alias": "allacqua-los-angeles-2",
+        "name": "All'Acqua",
+        "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/6ukUGHnvuBkSHFWIoZWMFg/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/allacqua-los-angeles-2?adjust_creative=R6D4r9_3fLJt7LnAmpdrJg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=R6D4r9_3fLJt7LnAmpdrJg",
+        "review_count": 701,
+        "categories": [
+            { "alias": "italian", "title": "Italian" },
+            { "alias": "pizza", "title": "Pizza" }
+        ],
+        "rating": 4,
+        "coordinates": { "latitude": 34.1184299, "longitude": -118.25971 },
+        "transactions": ["delivery", "pickup"],
+        "price": "$$",
+        "location": {
+            "address1": "3280 Glendale Blvd",
+            "address2": "",
+            "address3": "",
+            "city": "Los Angeles",
+            "zip_code": "90039",
+            "country": "US",
+            "state": "CA",
+            "display_address": ["3280 Glendale Blvd", "Los Angeles, CA 90039"]
+        },
+        "phone": "+13236633280",
+        "display_phone": "(323) 663-3280",
+        "distance": 6634.8174206073445
+    },
+    {
+        "id": "aiECaCjhSTVopFyFHxuvgQ",
+        "alias": "thanks-pizza-los-angeles",
+        "name": "Thanks Pizza",
+        "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/s4Davsbex4kBkXNl3rNvFQ/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/thanks-pizza-los-angeles?adjust_creative=R6D4r9_3fLJt7LnAmpdrJg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=R6D4r9_3fLJt7LnAmpdrJg",
+        "review_count": 154,
+        "categories": [{ "alias": "pizza", "title": "Pizza" }],
+        "rating": 4.5,
+        "coordinates": { "latitude": 34.06577, "longitude": -118.30847 },
+        "transactions": ["delivery", "pickup"],
+        "location": {
+            "address1": "450 S Western Ave",
+            "address2": "305 FC-1",
+            "address3": "",
+            "city": "Los Angeles",
+            "zip_code": "90020",
+            "country": "US",
+            "state": "CA",
+            "display_address": [
+                "450 S Western Ave",
+                "305 FC-1",
+                "Los Angeles, CA 90020"
+            ]
+        },
+        "phone": "+15102924119",
+        "display_phone": "(510) 292-4119",
+        "distance": 1149.8230429633716
+    },
+    {
+        "id": "F2W1R7yIvSOqD1xH_F1cZA",
+        "alias": "wood-los-angeles-8",
+        "name": "Wood",
+        "image_url": "https://s3-media4.fl.yelpcdn.com/bphoto/3m2BSYYss3odo0nwu8RGJw/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/wood-los-angeles-8?adjust_creative=R6D4r9_3fLJt7LnAmpdrJg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=R6D4r9_3fLJt7LnAmpdrJg",
+        "review_count": 1073,
+        "categories": [
+            { "alias": "pizza", "title": "Pizza" },
+            { "alias": "italian", "title": "Italian" },
+            { "alias": "wine_bars", "title": "Wine Bars" }
+        ],
+        "rating": 4,
+        "coordinates": { "latitude": 34.08292, "longitude": -118.27289 },
+        "transactions": ["restaurant_reservation", "delivery", "pickup"],
+        "price": "$$$",
+        "location": {
+            "address1": "2861 Sunset Blvd",
+            "address2": null,
+            "address3": "",
+            "city": "Los Angeles",
+            "zip_code": "90026",
+            "country": "US",
+            "state": "CA",
+            "display_address": ["2861 Sunset Blvd", "Los Angeles, CA 90026"]
+        },
+        "phone": "+13236679940",
+        "display_phone": "(323) 667-9940",
+        "distance": 3500.5825242581923
+    },
+    {
+        "id": "WylKsZv1qKCDqrHd-joiOA",
+        "alias": "michelangelo-ristorante-los-angeles-2",
+        "name": "Michelangelo Ristorante",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/f5TgJ1oJok6AlE1XjcMapA/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/michelangelo-ristorante-los-angeles-2?adjust_creative=R6D4r9_3fLJt7LnAmpdrJg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=R6D4r9_3fLJt7LnAmpdrJg",
+        "review_count": 940,
+        "categories": [
+            { "alias": "italian", "title": "Italian" },
+            { "alias": "pizza", "title": "Pizza" },
+            { "alias": "breakfast_brunch", "title": "Breakfast & Brunch" }
+        ],
+        "rating": 4.5,
+        "coordinates": {
+            "latitude": 34.1069829190952,
+            "longitude": -118.263623872353
+        },
+        "transactions": ["delivery", "pickup"],
+        "price": "$$",
+        "location": {
+            "address1": "2742 Rowena Ave",
+            "address2": "",
+            "address3": "",
+            "city": "Los Angeles",
+            "zip_code": "90039",
+            "country": "US",
+            "state": "CA",
+            "display_address": ["2742 Rowena Ave", "Los Angeles, CA 90039"]
+        },
+        "phone": "+13236604843",
+        "display_phone": "(323) 660-4843",
+        "distance": 5492.669434665028
+    },
+    {
+        "id": "sOQnBawL11YPis45ddDghA",
+        "alias": "pizza-go-los-angeles",
+        "name": "Pizza Go",
+        "image_url": "https://s3-media2.fl.yelpcdn.com/bphoto/aVUsSpvm5dB-SzTWO3z1Rw/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/pizza-go-los-angeles?adjust_creative=R6D4r9_3fLJt7LnAmpdrJg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=R6D4r9_3fLJt7LnAmpdrJg",
+        "review_count": 404,
+        "categories": [{ "alias": "pizza", "title": "Pizza" }],
+        "rating": 4,
+        "coordinates": {
+            "latitude": 34.06877916126237,
+            "longitude": -118.3055661
+        },
+        "transactions": ["delivery", "pickup"],
+        "price": "$$",
+        "location": {
+            "address1": "4200 W 3rd St",
+            "address2": "",
+            "address3": "",
+            "city": "Los Angeles",
+            "zip_code": "90020",
+            "country": "US",
+            "state": "CA",
+            "display_address": ["4200 W 3rd St", "Los Angeles, CA 90020"]
+        },
+        "phone": "+12133815131",
+        "display_phone": "(213) 381-5131",
+        "distance": 900.0284449723016
+    },
+    {
+        "id": "b4Oq0ESx-a_w1qJ-snDWvw",
+        "alias": "cruzer-pizza-100-vegan-los-angeles-2",
+        "name": "Cruzer Pizza 100% Vegan",
+        "image_url": "https://s3-media3.fl.yelpcdn.com/bphoto/jrNQIdWWoCUda4hrTiuhxA/o.jpg",
+        "is_closed": false,
+        "url": "https://www.yelp.com/biz/cruzer-pizza-100-vegan-los-angeles-2?adjust_creative=R6D4r9_3fLJt7LnAmpdrJg&utm_campaign=yelp_api_v3&utm_medium=api_v3_business_search&utm_source=R6D4r9_3fLJt7LnAmpdrJg",
+        "review_count": 856,
+        "categories": [
+            { "alias": "pizza", "title": "Pizza" },
+            { "alias": "vegan", "title": "Vegan" }
+        ],
+        "rating": 4.5,
+        "coordinates": { "latitude": 34.10211, "longitude": -118.29962 },
+        "transactions": ["delivery", "pickup"],
+        "price": "$$",
+        "location": {
+            "address1": "5051 Hollywood Blvd",
+            "address2": "",
+            "address3": "",
+            "city": "Los Angeles",
+            "zip_code": "90027",
+            "country": "US",
+            "state": "CA",
+            "display_address": ["5051 Hollywood Blvd", "Los Angeles, CA 90027"]
+        },
+        "phone": "+13236660600",
+        "display_phone": "(323) 666-0600",
+        "distance": 3052.7545420822535
+    }
+]
