@@ -1,9 +1,9 @@
 import { Tabs } from 'expo-router/tabs'
-import GridIcon from '../assets/GridIcon'
 import ListIcon from '../assets/ListIcon'
 import MapIcon from '../assets/MapIcon'
 import { useFonts } from 'expo-font'
 import GeneralStatusBarColor from '../Components/GeneralStatusBarColor'
+import PizzaIcon from '../assets/PizzaIcon'
 
 export default function AppLayout() {
     const [fontsLoaded] = useFonts({
@@ -35,15 +35,6 @@ export default function AppLayout() {
                         }}
                     />
                     <Tabs.Screen
-                        name="grid"
-                        options={{
-                            headerShown: false,
-                            tabBarLabel: '',
-                            tabBarIcon: () => <GridIcon />,
-                            tabBarIconStyle: { marginBottom: -8 },
-                        }}
-                    />
-                    <Tabs.Screen
                         name="list"
                         options={{
                             headerShown: false,
@@ -58,6 +49,15 @@ export default function AppLayout() {
                             headerShown: false,
                             tabBarLabel: '',
                             tabBarIcon: () => <MapIcon />,
+                            tabBarIconStyle: { marginBottom: -8 },
+                        }}
+                    />
+                    <Tabs.Screen
+                        name="info"
+                        options={{
+                            headerShown: false,
+                            tabBarLabel: '',
+                            tabBarIcon: () => <PizzaIcon />,
                             tabBarIconStyle: { marginBottom: -8 },
                         }}
                     />

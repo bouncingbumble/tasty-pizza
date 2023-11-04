@@ -11,6 +11,7 @@ import {
 import pizzaPlaces from '../assets/pizza-places.json'
 import CompassIcon from '../assets/CompassIcon'
 import GeneralStatusBarColor from '../Components/GeneralStatusBarColor'
+import LinkIcon from '../assets/LinkIcon'
 
 const styles = StyleSheet.create({
     container: {
@@ -49,6 +50,10 @@ const styles = StyleSheet.create({
         backgroundColor: '#a42229',
         borderRadius: '23%',
     },
+    linkIcon: {
+        height: 16,
+        width: 16,
+    },
     separator: {
         backgroundColor: '#316134',
         height: 6,
@@ -57,9 +62,16 @@ const styles = StyleSheet.create({
 
 const DATA = pizzaPlaces
 
-const Item = ({ name, imageUrl, address }) => (
+const Item = ({ name, imageUrl, address, website }) => (
     <View style={styles.item}>
-        <Text style={styles.name}>{name}</Text>
+        <Pressable onPress={() => alert(`go to ${website}`)}>
+            <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+                <Text style={styles.name}>{name} </Text>
+                <View style={styles.linkIcon}>
+                    <LinkIcon />
+                </View>
+            </View>
+        </Pressable>
         <View style={styles.card}>
             <ImageBackground
                 source={{
@@ -94,6 +106,7 @@ export default function List() {
                             name={item.name}
                             imageUrl={item.image_url}
                             address={item.location.address1}
+                            website={item.url}
                         />
                     </Pressable>
                 )}
