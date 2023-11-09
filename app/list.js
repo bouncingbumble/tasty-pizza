@@ -14,6 +14,7 @@ import LinkIcon from '../assets/LinkIcon'
 import * as Location from 'expo-location'
 import React, { useState, useEffect } from 'react'
 import { getDistance, convertDistance } from 'geolib'
+import open from 'react-native-open-maps'
 
 const styles = StyleSheet.create({
     container: {
@@ -74,41 +75,69 @@ const styles = StyleSheet.create({
 
 const DATA = pizzaPlaces
 
-const Item = ({ name, imageUrl, address, website, distance }) => (
-    <View style={styles.item}>
-        <Pressable onPress={async () => await Linking.openURL(website)}>
-            <View style={{ flexDirection: 'row', alignItems: 'center' }}>
-                <Text style={styles.name}>{name} </Text>
-                <View style={styles.linkIcon}>
-                    <LinkIcon />
-                </View>
-            </View>
-        </Pressable>
-        <View style={styles.card}>
-            <ImageBackground
-                source={{
-                    uri: imageUrl,
-                }}
-                resizeMode="cover"
-                style={styles.pic}
-                borderRadius={16}
-            ></ImageBackground>
-            <View style={styles.addressContainer}>
-                <View style={styles.addressLeft}>
-                    <View style={styles.mapIcon}>
-                        <CompassIcon />
+const Item = ({ name, imageUrl, address, website, coords, userLocation }) => {
+    return (
+        <View style={styles.item}>
+            <Pressable onPress={async () => await Linking.openURL(website)}>
+                <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+                    <Text style={styles.name}>{name} </Text>
+                    <View style={styles.linkIcon}>
+                        <LinkIcon />
                     </View>
-                    {address && <Text style={styles.address}>{address}</Text>}
                 </View>
-                {distance && (
-                    <Text style={styles.distance}>
-                        {distance.toString().slice(0, 3)}mi
-                    </Text>
+            </Pressable>
+            <View style={styles.card}>
+                <ImageBackground
+                    source={{
+                        uri: imageUrl,
+                    }}
+                    resizeMode="cover"
+                    style={styles.pic}
+                    borderRadius={16}
+                ></ImageBackground>
+                {address && (
+                    <Pressable
+                        onPress={() =>
+                            open({
+                                end: address,
+                            })
+                        }
+                    >
+                        <View style={styles.addressContainer}>
+                            <View style={styles.addressLeft}>
+                                <View style={styles.mapIcon}>
+                                    <CompassIcon />
+                                </View>
+                                {address && (
+                                    <Text style={styles.address}>
+                                        {address}
+                                    </Text>
+                                )}
+                            </View>
+                            {coords && userLocation && (
+                                <Text style={styles.distance}>
+                                    {convertDistance(
+                                        getDistance(
+                                            {
+                                                latitude: coords.latitude,
+                                                longitude: coords.longitude,
+                                            },
+                                            userLocation
+                                        ),
+                                        'mi'
+                                    )
+                                        .toString()
+                                        .slice(0, 3)}
+                                    mi
+                                </Text>
+                            )}
+                        </View>
+                    </Pressable>
                 )}
             </View>
         </View>
-    </View>
-)
+    )
+}
 
 export default function List() {
     const [location, setLocation] = useState('')
@@ -134,37 +163,19 @@ export default function List() {
         getLocation()
     }, [])
 
-    const onPressFunction = () => {
-        alert('hello')
-    }
-
     return (
         <SafeAreaView style={styles.container}>
             <FlatList
                 data={DATA}
                 renderItem={({ item }) => (
-                    <Pressable onPress={onPressFunction}>
-                        <Item
-                            name={item.name}
-                            imageUrl={item.image_url}
-                            address={item.location.address1}
-                            website={item.url}
-                            distance={
-                                location.coords &&
-                                convertDistance(
-                                    getDistance(
-                                        {
-                                            latitude: location.coords.latitude,
-                                            longitude:
-                                                location.coords.longitude,
-                                        },
-                                        item.coordinates
-                                    ),
-                                    'mi'
-                                )
-                            }
-                        />
-                    </Pressable>
+                    <Item
+                        name={item.name}
+                        imageUrl={item.image_url}
+                        address={item.location.address1}
+                        website={item.url}
+                        coords={item.coordinates}
+                        userLocation={location.coords}
+                    />
                 )}
                 keyExtractor={(item) => item.id}
                 ItemSeparatorComponent={<View style={styles.separator} />}
