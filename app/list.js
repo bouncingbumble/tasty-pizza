@@ -6,6 +6,7 @@ import {
     View,
     Pressable,
     ImageBackground,
+    Linking,
 } from 'react-native'
 import pizzaPlaces from '../assets/pizza-places.json'
 import CompassIcon from '../assets/CompassIcon'
@@ -75,7 +76,7 @@ const DATA = pizzaPlaces
 
 const Item = ({ name, imageUrl, address, website, distance }) => (
     <View style={styles.item}>
-        <Pressable onPress={() => alert(`go to ${website}`)}>
+        <Pressable onPress={async () => await Linking.openURL(website)}>
             <View style={{ flexDirection: 'row', alignItems: 'center' }}>
                 <Text style={styles.name}>{name} </Text>
                 <View style={styles.linkIcon}>
