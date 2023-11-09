@@ -141,6 +141,7 @@ const Item = ({ name, imageUrl, address, website, coords, userLocation }) => {
 
 export default function List() {
     const [location, setLocation] = useState('')
+
     useEffect(() => {
         const getLocation = async () => {
             try {
@@ -148,15 +149,16 @@ export default function List() {
                     await Location.requestForegroundPermissionsAsync()
 
                 if (status !== 'granted') {
-                    setLocationError('Location permission denied')
+                    alert(
+                        'Location permission denied :( You will need to allow location in order for tasty to work its magic.'
+                    )
                     return
                 }
 
                 let location = await Location.getCurrentPositionAsync({})
                 setLocation(location)
-                console.log(location)
             } catch (error) {
-                console.error('Error requesting location permission:', error)
+                alert('Error requesting location permission:')
             }
         }
 
