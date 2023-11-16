@@ -20,53 +20,7 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
     },
-    pic: {
-        flex: 1,
-        height: 200,
-        width: '100%',
-        marginTop: 12,
-        marginBottom: 12,
-    },
-    item: {
-        flex: 1,
-        padding: 12,
-    },
-    card: {},
-    name: {
-        fontSize: 20,
-        color: '#000',
-        fontFamily: 'Nanum Gothic Bold',
-    },
-    addressContainer: {
-        width: '100%',
-        flexDirection: 'row',
-        alignItems: 'center',
-        justifyContent: 'space-between',
-    },
-    address: {
-        color: '#f1af4d',
-        marginLeft: 8,
-        fontFamily: 'Nanum Gothic',
-    },
-    addressLeft: {
-        flexDirection: 'row',
-        alignItems: 'center',
-    },
-    distance: {
-        paddingRight: 4,
-        fontFamily: 'Nanum Gothic Bold',
-        color: '#a42229',
-    },
-    mapIcon: {
-        height: 24,
-        width: 24,
-        backgroundColor: '#a42229',
-        borderRadius: '23%',
-    },
-    linkIcon: {
-        height: 16,
-        width: 16,
-    },
+
     separator: {
         backgroundColor: '#316134',
         height: 6,
@@ -75,7 +29,63 @@ const styles = StyleSheet.create({
 
 const DATA = pizzaPlaces
 
-const Item = ({ name, imageUrl, address, website, coords, userLocation }) => {
+export const Item = ({
+    name,
+    imageUrl,
+    address,
+    website,
+    coords,
+    userLocation,
+}) => {
+    const styles = StyleSheet.create({
+        item: {
+            flex: 1,
+            padding: 12,
+        },
+        name: {
+            fontSize: 20,
+            color: '#000',
+            fontFamily: 'Nanum Gothic Bold',
+        },
+        addressContainer: {
+            width: '100%',
+            flexDirection: 'row',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+        },
+        address: {
+            color: '#f1af4d',
+            marginLeft: 8,
+            fontFamily: 'Nanum Gothic',
+        },
+        addressLeft: {
+            flexDirection: 'row',
+            alignItems: 'center',
+        },
+        distance: {
+            paddingRight: 4,
+            fontFamily: 'Nanum Gothic Bold',
+            color: '#a42229',
+        },
+        mapIcon: {
+            height: 24,
+            width: 24,
+            backgroundColor: '#a42229',
+            borderRadius: '23%',
+        },
+        linkIcon: {
+            height: 16,
+            width: 16,
+        },
+        pic: {
+            flex: 1,
+            height: 200,
+            width: '100%',
+            marginTop: 12,
+            marginBottom: 12,
+        },
+    })
+
     return (
         <View style={styles.item}>
             <Pressable onPress={async () => await Linking.openURL(website)}>
@@ -87,14 +97,21 @@ const Item = ({ name, imageUrl, address, website, coords, userLocation }) => {
                 </View>
             </Pressable>
             <View style={styles.card}>
-                <ImageBackground
-                    source={{
-                        uri: imageUrl,
+                <View
+                    style={{
+                        height: 224,
+                        width: '100%',
                     }}
-                    resizeMode="cover"
-                    style={styles.pic}
-                    borderRadius={16}
-                ></ImageBackground>
+                >
+                    <ImageBackground
+                        source={{
+                            uri: imageUrl,
+                        }}
+                        resizeMode="cover"
+                        style={styles.pic}
+                        borderRadius={16}
+                    ></ImageBackground>
+                </View>
                 {address && (
                     <Pressable
                         onPress={() =>
