@@ -55,47 +55,57 @@ export default function Map() {
     return (
         <SafeAreaView style={styles.container}>
             <View>
-                <MapView
-                    style={styles.map}
-                    initialRegion={{
-                        latitude: 33.96435,
-                        longitude: -118.204412037037,
-                        latitudeDelta: 0.0922,
-                        longitudeDelta: 0.0421,
-                    }}
-                >
-                    {pizzaPlaces.map((place, i) => {
-                        if (
-                            place.coordinates.latitude &&
-                            place.coordinates.longitude
-                        ) {
-                            return (
-                                <Marker
-                                    key={i}
-                                    coordinate={{
-                                        latitude: place.coordinates.latitude,
-                                        longitude: place.coordinates.longitude,
-                                    }}
-                                >
-                                    <Image
-                                        source={require('../assets/pizza-stand.png')}
-                                        style={{ height: 24, width: 24 }}
-                                    />
-                                    <Callout tooltip style={styles.customView}>
-                                        <Item
-                                            name={place.name}
-                                            imageUrl={place.image_url}
-                                            address={place.location.address1}
-                                            website={place.url}
-                                            coords={place.coordinates}
-                                            userLocation={location.coords}
+                {location.coords && (
+                    <MapView
+                        style={styles.map}
+                        initialRegion={{
+                            latitude: location.coords.latitude,
+                            longitude: location.coords.longitude,
+                            latitudeDelta: 0.0922,
+                            longitudeDelta: 0.0421,
+                        }}
+                        showsUserLocation={true}
+                    >
+                        {pizzaPlaces.map((place, i) => {
+                            if (
+                                place.coordinates.latitude &&
+                                place.coordinates.longitude
+                            ) {
+                                return (
+                                    <Marker
+                                        key={i}
+                                        coordinate={{
+                                            latitude:
+                                                place.coordinates.latitude,
+                                            longitude:
+                                                place.coordinates.longitude,
+                                        }}
+                                    >
+                                        <Image
+                                            source={require('../assets/pizza-stand.png')}
+                                            style={{ height: 24, width: 24 }}
                                         />
-                                    </Callout>
-                                </Marker>
-                            )
-                        }
-                    })}
-                </MapView>
+                                        <Callout
+                                            tooltip
+                                            style={styles.customView}
+                                        >
+                                            <Item
+                                                name={place.name}
+                                                imageUrl={place.image_url}
+                                                address={
+                                                    place.location.address1
+                                                }
+                                                website={place.url}
+                                                coords={place.coordinates}
+                                                userLocation={location.coords}
+                                            />
+                                        </Callout>
+                                    </Marker>
+                                )
+                            }
+                        })}
+                    </MapView>
+                )}
             </View>
         </SafeAreaView>
     )
