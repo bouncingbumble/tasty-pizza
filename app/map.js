@@ -1,7 +1,9 @@
 import MapView from 'react-native-maps'
 import { Marker } from 'react-native-maps'
-import { StyleSheet, View, SafeAreaView } from 'react-native'
+import { StyleSheet, View, SafeAreaView, Image } from 'react-native'
 import pizzaPlaces from '../assets/pizza-places.json'
+import pizzaSlice from '../assets/pizza-slice-2.svg'
+
 const styles = StyleSheet.create({
     container: {
         flex: 1,
@@ -39,7 +41,12 @@ export default function Map() {
                                     }}
                                     title={place.name}
                                     pinColor={'#ffd1dc'}
-                                />
+                                >
+                                    <Image
+                                        source={require('../assets/pizza-stand.png')}
+                                        style={{ height: 24, width: 24 }}
+                                    />
+                                </Marker>
                             )
                         }
                     })}
