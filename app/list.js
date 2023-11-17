@@ -15,6 +15,7 @@ import * as Location from 'expo-location'
 import React, { useState, useEffect } from 'react'
 import { getDistance, convertDistance } from 'geolib'
 import open from 'react-native-open-maps'
+import { supabase } from '../supabase/api'
 
 const styles = StyleSheet.create({
     container: {
@@ -34,7 +35,8 @@ export const Item = ({
     imageUrl,
     address,
     website,
-    coords,
+    latitude,
+    longitude,
     userLocation,
 }) => {
     const styles = StyleSheet.create({
@@ -131,13 +133,13 @@ export const Item = ({
                                     </Text>
                                 )}
                             </View>
-                            {coords && userLocation && (
+                            {latitude && longitude && userLocation && (
                                 <Text style={styles.distance}>
                                     {convertDistance(
                                         getDistance(
                                             {
-                                                latitude: coords.latitude,
-                                                longitude: coords.longitude,
+                                                latitude,
+                                                longitude,
                                             },
                                             userLocation
                                         ),
@@ -158,6 +160,7 @@ export const Item = ({
 
 export default function List() {
     const [location, setLocation] = useState('')
+    const [data, setData] = useState('')
 
     useEffect(() => {
         const getLocation = async () => {
@@ -182,23 +185,52 @@ export default function List() {
         getLocation()
     }, [])
 
+    useEffect(() => {
+        if (location !== '') {
+            getPizzaPlaces()
+        }
+    }, [location])
+
+    const getPizzaPlaces = async () => {
+        let { latitude, longitude } = location.coords
+
+        try {
+            const { data, error } = await supabase
+                .from('pizzaPlace')
+                .select('*')
+                .limit(25)
+
+            if (error) {
+                console.error('Error fetching data:', error.message)
+                return
+            }
+
+            setData(data)
+        } catch (error) {
+            console.error('Error:', error.message)
+        }
+    }
+
     return (
         <SafeAreaView style={styles.container}>
-            <FlatList
-                data={DATA}
-                renderItem={({ item }) => (
-                    <Item
-                        name={item.name}
-                        imageUrl={item.image_url}
-                        address={item.location.address1}
-                        website={item.url}
-                        coords={item.coordinates}
-                        userLocation={location.coords}
-                    />
-                )}
-                keyExtractor={(item) => item.id}
-                ItemSeparatorComponent={<View style={styles.separator} />}
-            />
+            {data.length !== 0 && (
+                <FlatList
+                    data={data}
+                    renderItem={({ item }) => (
+                        <Item
+                            name={item.name}
+                            imageUrl={item.imageUrl}
+                            address={item.location}
+                            website={item.url}
+                            longitude={item.longitude}
+                            latitude={item.latitude}
+                            userLocation={location.coords}
+                        />
+                    )}
+                    keyExtractor={(item) => item.id}
+                    ItemSeparatorComponent={<View style={styles.separator} />}
+                />
+            )}
         </SafeAreaView>
     )
 }
