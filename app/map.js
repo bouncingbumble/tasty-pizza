@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react'
 import MapView from 'react-native-maps'
 import { Marker, Callout } from 'react-native-maps'
 import { StyleSheet, View, SafeAreaView, Image, Text } from 'react-native'
-import pizzaPlaces from '../assets/pizza-places.json'
 import * as Location from 'expo-location'
 import { Item } from './list'
+import { getPizzaPlaces } from '../supabase/api'
 
 const styles = StyleSheet.create({
     container: {
@@ -28,6 +28,7 @@ const styles = StyleSheet.create({
 
 export default function Map() {
     const [location, setLocation] = useState('')
+    const [data, setData] = useState('')
 
     useEffect(() => {
         const getLocation = async () => {
@@ -52,10 +53,16 @@ export default function Map() {
         getLocation()
     }, [])
 
+    useEffect(() => {
+        if (location !== '') {
+            getPizzaPlaces().then((data) => setData(data))
+        }
+    }, [location])
+
     return (
         <SafeAreaView style={styles.container}>
             <View>
-                {location.coords && (
+                {location.coords && data.length > 0 && (
                     <MapView
                         style={styles.map}
                         initialRegion={{
@@ -66,37 +73,34 @@ export default function Map() {
                         }}
                         showsUserLocation={true}
                     >
-                        {pizzaPlaces.map((place, i) => {
-                            if (
-                                place.coordinates.latitude &&
-                                place.coordinates.longitude
-                            ) {
+                        {data.map((item, i) => {
+                            if (item.latitude && item.longitude) {
                                 return (
                                     <Marker
                                         key={i}
                                         coordinate={{
-                                            latitude:
-                                                place.coordinates.latitude,
-                                            longitude:
-                                                place.coordinates.longitude,
+                                            latitude: item.latitude,
+                                            longitude: item.longitude,
                                         }}
                                     >
                                         <Image
                                             source={require('../assets/pizza-stand.png')}
-                                            style={{ height: 24, width: 24 }}
+                                            style={{
+                                                height: 24,
+                                                width: 24,
+                                            }}
                                         />
                                         <Callout
                                             tooltip
                                             style={styles.customView}
                                         >
                                             <Item
-                                                name={place.name}
-                                                imageUrl={place.image_url}
-                                                address={
-                                                    place.location.address1
-                                                }
-                                                website={place.url}
-                                                coords={place.coordinates}
+                                                name={item.name}
+                                                imageUrl={item.imageUrl}
+                                                address={item.location}
+                                                website={item.url}
+                                                longitude={item.longitude}
+                                                latitude={item.latitude}
                                                 userLocation={location.coords}
                                             />
                                         </Callout>

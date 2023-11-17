@@ -15,7 +15,7 @@ import * as Location from 'expo-location'
 import React, { useState, useEffect } from 'react'
 import { getDistance, convertDistance } from 'geolib'
 import open from 'react-native-open-maps'
-import { supabase } from '../supabase/api'
+import { getPizzaPlaces } from '../supabase/api'
 
 const styles = StyleSheet.create({
     container: {
@@ -187,29 +187,9 @@ export default function List() {
 
     useEffect(() => {
         if (location !== '') {
-            getPizzaPlaces()
+            getPizzaPlaces().then((data) => setData(data))
         }
     }, [location])
-
-    const getPizzaPlaces = async () => {
-        let { latitude, longitude } = location.coords
-
-        try {
-            const { data, error } = await supabase
-                .from('pizzaPlace')
-                .select('*')
-                .limit(25)
-
-            if (error) {
-                console.error('Error fetching data:', error.message)
-                return
-            }
-
-            setData(data)
-        } catch (error) {
-            console.error('Error:', error.message)
-        }
-    }
 
     return (
         <SafeAreaView style={styles.container}>

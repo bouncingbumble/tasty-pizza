@@ -6,20 +6,27 @@ const url = process.env.EXPO_PUBLIC_SUPABASE_URL
 const key = process.env.EXPO_PUBLIC_SUPABASE_ANON_KEY
 
 // Initialize the Supabase client
-export const supabase = createClient(url, key, {
+const supabase = createClient(url, key, {
     auth: {
         storage: AsyncStorage,
         detectSessionInUrl: false,
     },
 })
 
-export const handleQuery = async (table, query) => {
-    const response = await supabase.query(table, query)
-    if (response.error) {
-        // Handle query error
-        console.log(response.error)
-    } else {
-        // Handle successful query
-        return response
+export const getPizzaPlaces = async (latitude, longitude) => {
+    try {
+        const { data, error } = await supabase
+            .from('pizzaPlace')
+            .select('*')
+            .limit(25)
+
+        if (error) {
+            console.error('Error fetching data:', error.message)
+            return
+        }
+
+        return data
+    } catch (error) {
+        console.error('Error:', error.message)
     }
 }
