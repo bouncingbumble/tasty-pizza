@@ -1,31 +1,19 @@
-import AsyncStorage from '@react-native-async-storage/async-storage'
-import 'react-native-url-polyfill/auto'
-import { createClient } from '@supabase/supabase-js'
+import axios from 'axios'
 
-const url = process.env.EXPO_PUBLIC_SUPABASE_URL
-const key = process.env.EXPO_PUBLIC_SUPABASE_ANON_KEY
-
-// Initialize the Supabase client
-const supabase = createClient(url, key, {
-    auth: {
-        storage: AsyncStorage,
-        detectSessionInUrl: false,
-    },
-})
-
-export const getPizzaPlaces = async (latitude, longitude) => {
+export const getPizzaPlaces = async ({ latitude, longitude }) => {
+    console.log(latitude)
+    console.log(longitude)
     try {
-        const { data, error } = await supabase
-            .from('pizzaPlace')
-            .select('*')
-            .limit(25)
+        let res = await axios({
+            method: 'post',
+            url: 'http://localhost:8080/api/v1/pizzaPlaces',
+            data: {
+                latitude,
+                longitude,
+            },
+        })
 
-        if (error) {
-            console.error('Error fetching data:', error.message)
-            return
-        }
-
-        return data
+        return res.data
     } catch (error) {
         console.error('Error:', error.message)
     }

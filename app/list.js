@@ -187,7 +187,14 @@ export default function List() {
 
     useEffect(() => {
         if (location !== '') {
-            getPizzaPlaces().then((data) => setData(data))
+            console.log(location.coords)
+            getPizzaPlaces({
+                latitude: location.coords.latitude,
+                longitude: location.coords.longitude,
+            }).then((data) => {
+                setData(data)
+                console.log(data)
+            })
         }
     }, [location])
 
@@ -199,11 +206,11 @@ export default function List() {
                     renderItem={({ item }) => (
                         <Item
                             name={item.name}
-                            imageUrl={item.imageUrl}
-                            address={item.location}
+                            imageUrl={item.image_url}
+                            address={item.location.address1}
                             website={item.url}
-                            longitude={item.longitude}
-                            latitude={item.latitude}
+                            longitude={item.coordinates.longitude}
+                            latitude={item.coordinates.latitude}
                             userLocation={location.coords}
                         />
                     )}
