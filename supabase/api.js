@@ -3,10 +3,13 @@ import axios from 'axios'
 export const getPizzaPlaces = async ({ latitude, longitude }) => {
     console.log(latitude)
     console.log(longitude)
+    console.log(process.env.EXPO_PUBLIC_BACKEND_ENDPOINT)
     try {
         let res = await axios({
             method: 'post',
-            url: 'http://localhost:8080/api/v1/pizzaPlaces',
+            url:
+                process.env.EXPO_PUBLIC_BACKEND_ENDPOINT +
+                '/api/v1/pizzaPlaces',
             data: {
                 latitude,
                 longitude,
@@ -15,6 +18,6 @@ export const getPizzaPlaces = async ({ latitude, longitude }) => {
 
         return res.data
     } catch (error) {
-        console.error('Error:', error.message)
+        console.error('Error')
     }
 }

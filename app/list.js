@@ -107,7 +107,7 @@ export const Item = ({
                 >
                     <ImageBackground
                         source={{
-                            uri: imageUrl,
+                            uri: imageUrl.length > 0 && imageUrl,
                         }}
                         resizeMode="cover"
                         style={styles.pic}

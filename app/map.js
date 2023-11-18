@@ -55,7 +55,14 @@ export default function Map() {
 
     useEffect(() => {
         if (location !== '') {
-            getPizzaPlaces().then((data) => setData(data))
+            console.log(location.coords)
+            getPizzaPlaces({
+                latitude: location.coords.latitude,
+                longitude: location.coords.longitude,
+            }).then((data) => {
+                setData(data)
+                console.log(data)
+            })
         }
     }, [location])
 
@@ -74,39 +81,36 @@ export default function Map() {
                         showsUserLocation={true}
                     >
                         {data.map((item, i) => {
-                            if (item.latitude && item.longitude) {
-                                return (
-                                    <Marker
-                                        key={i}
-                                        coordinate={{
-                                            latitude: item.latitude,
-                                            longitude: item.longitude,
+                            return (
+                                <Marker
+                                    key={i}
+                                    coordinate={{
+                                        latitude: item.coordinates.latitude,
+                                        longitude: item.coordinates.longitude,
+                                    }}
+                                >
+                                    <Image
+                                        source={require('../assets/pizza-stand.png')}
+                                        style={{
+                                            height: 24,
+                                            width: 24,
                                         }}
-                                    >
-                                        <Image
-                                            source={require('../assets/pizza-stand.png')}
-                                            style={{
-                                                height: 24,
-                                                width: 24,
-                                            }}
+                                    />
+                                    <Callout tooltip style={styles.customView}>
+                                        <Item
+                                            name={item.name}
+                                            imageUrl={item.image_url}
+                                            address={item.location.address1}
+                                            website={item.url}
+                                            longitude={
+                                                item.coordinates.longitude
+                                            }
+                                            latitude={item.coordinates.latitude}
+                                            userLocation={location.coords}
                                         />
-                                        <Callout
-                                            tooltip
-                                            style={styles.customView}
-                                        >
-                                            <Item
-                                                name={item.name}
-                                                imageUrl={item.imageUrl}
-                                                address={item.location}
-                                                website={item.url}
-                                                longitude={item.longitude}
-                                                latitude={item.latitude}
-                                                userLocation={location.coords}
-                                            />
-                                        </Callout>
-                                    </Marker>
-                                )
-                            }
+                                    </Callout>
+                                </Marker>
+                            )
                         })}
                     </MapView>
                 )}
