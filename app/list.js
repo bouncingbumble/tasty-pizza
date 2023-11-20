@@ -8,14 +8,12 @@ import {
     ImageBackground,
     Linking,
 } from 'react-native'
-import pizzaPlaces from '../assets/pizza-places.json'
 import CompassIcon from '../assets/CompassIcon'
 import LinkIcon from '../assets/LinkIcon'
-import * as Location from 'expo-location'
-import React, { useState, useEffect } from 'react'
 import { getDistance, convertDistance } from 'geolib'
 import open from 'react-native-open-maps'
-import { getPizzaPlaces } from '../supabase/api'
+import { useContext } from 'react'
+import { TastyContext } from '../tastyContext'
 
 const styles = StyleSheet.create({
     container: {
@@ -27,8 +25,6 @@ const styles = StyleSheet.create({
         height: 6,
     },
 })
-
-const DATA = pizzaPlaces
 
 export const Item = ({
     name,
@@ -159,50 +155,13 @@ export const Item = ({
 }
 
 export default function List() {
-    const [location, setLocation] = useState('')
-    const [data, setData] = useState('')
-
-    useEffect(() => {
-        const getLocation = async () => {
-            try {
-                let { status } =
-                    await Location.requestForegroundPermissionsAsync()
-
-                if (status !== 'granted') {
-                    alert(
-                        'Location permission denied :( You will need to allow location in order for tasty to work its magic.'
-                    )
-                    return
-                }
-
-                let location = await Location.getCurrentPositionAsync({})
-                setLocation(location)
-            } catch (error) {
-                alert('Error requesting location permission:')
-            }
-        }
-
-        getLocation()
-    }, [])
-
-    useEffect(() => {
-        if (location !== '') {
-            console.log(location.coords)
-            getPizzaPlaces({
-                latitude: location.coords.latitude,
-                longitude: location.coords.longitude,
-            }).then((data) => {
-                setData(data)
-                console.log(data)
-            })
-        }
-    }, [location])
+    const { pizzaPlaces, location } = useContext(TastyContext)
 
     return (
         <SafeAreaView style={styles.container}>
-            {data.length !== 0 && (
+            {pizzaPlaces.length !== 0 && (
                 <FlatList
-                    data={data}
+                    data={pizzaPlaces}
                     renderItem={({ item }) => (
                         <Item
                             name={item.name}

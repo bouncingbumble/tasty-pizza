@@ -1,10 +1,9 @@
-import React, { useState, useEffect } from 'react'
+import React, { useContext } from 'react'
 import MapView from 'react-native-maps'
 import { Marker, Callout } from 'react-native-maps'
-import { StyleSheet, View, SafeAreaView, Image, Text } from 'react-native'
-import * as Location from 'expo-location'
+import { StyleSheet, View, SafeAreaView, Image } from 'react-native'
 import { Item } from './list'
-import { getPizzaPlaces } from '../supabase/api'
+import { TastyContext } from '../tastyContext'
 
 const styles = StyleSheet.create({
     container: {
@@ -27,49 +26,12 @@ const styles = StyleSheet.create({
 })
 
 export default function Map() {
-    const [location, setLocation] = useState('')
-    const [data, setData] = useState('')
-
-    useEffect(() => {
-        const getLocation = async () => {
-            try {
-                let { status } =
-                    await Location.requestForegroundPermissionsAsync()
-
-                if (status !== 'granted') {
-                    alert(
-                        'Location permission denied :( You will need to allow location in order for tasty to work its magic.'
-                    )
-                    return
-                }
-
-                let location = await Location.getCurrentPositionAsync({})
-                setLocation(location)
-            } catch (error) {
-                alert('Error requesting location permission:')
-            }
-        }
-
-        getLocation()
-    }, [])
-
-    useEffect(() => {
-        if (location !== '') {
-            console.log(location.coords)
-            getPizzaPlaces({
-                latitude: location.coords.latitude,
-                longitude: location.coords.longitude,
-            }).then((data) => {
-                setData(data)
-                console.log(data)
-            })
-        }
-    }, [location])
+    const { pizzaPlaces, location } = useContext(TastyContext)
 
     return (
         <SafeAreaView style={styles.container}>
             <View>
-                {location.coords && data.length > 0 && (
+                {location.coords && pizzaPlaces.length > 0 && (
                     <MapView
                         style={styles.map}
                         initialRegion={{
@@ -80,7 +42,7 @@ export default function Map() {
                         }}
                         showsUserLocation={true}
                     >
-                        {data.map((item, i) => {
+                        {pizzaPlaces.map((item, i) => {
                             return (
                                 <Marker
                                     key={i}

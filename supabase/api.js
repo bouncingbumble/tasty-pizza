@@ -16,7 +16,20 @@ export const getPizzaPlaces = async ({ latitude, longitude }) => {
             },
         })
 
-        return res.data
+        const places = res.data.filter((p) => {
+            if (
+                p.rating >= 3.5 &&
+                p.transactions.includes('pickup') &&
+                p.transactions.includes('delivery') &&
+                p.review_count > 10
+            ) {
+                return true
+            } else {
+                return false
+            }
+        })
+
+        return places
     } catch (error) {
         console.error('Error')
     }
