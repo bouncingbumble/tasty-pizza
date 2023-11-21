@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react'
 import {
     StyleSheet,
     View,
@@ -57,11 +58,31 @@ const styles = StyleSheet.create({
 const STORAGE_KEY = 'isDeliveryOnly'
 
 export default function Info() {
+    const [isDeliveryOnly, setIsDeliveryOnly] = useState(false)
+
+    useEffect(() => {
+        getIsDelieveryOnly()
+    }, [])
+
+    const getIsDelieveryOnly = async () => {
+        try {
+            let bool = await AsyncStorage.getItem(STORAGE_KEY)
+            setIsDeliveryOnly(Boolean(bool))
+        } catch (error) {
+            alert(error)
+        }
+    }
+
     const handleToggleSwitch = async () => {
-        await AsyncStorage.setItem(
-            STORAGE_KEY,
-            !(await AsyncStorage.getItem(STORAGE_KEY))
-        )
+        try {
+            await AsyncStorage.setItem(
+                STORAGE_KEY,
+                JSON.stringify(!isDeliveryOnly)
+            )
+            setIsDeliveryOnly(!isDeliveryOnly)
+        } catch (error) {
+            alert(error)
+        }
     }
 
     return (
@@ -91,16 +112,10 @@ export default function Info() {
                         </Text>
                         <Switch
                             trackColor={{ false: '#316134', true: '#a42229' }}
-                            thumbColor={async () =>
-                                (await AsyncStorage.getItem(STORAGE_KEY))
-                                    ? '#f1af4d'
-                                    : '#fef0d3'
-                            }
+                            thumbColor={isDeliveryOnly ? '#f1af4d' : '#fef0d3'}
                             ios_backgroundColor="#316134"
                             onValueChange={handleToggleSwitch}
-                            value={async () =>
-                                await AsyncStorage.getItem(STORAGE_KEY)
-                            }
+                            value={isDeliveryOnly}
                         />
                     </View>
                 </View>
