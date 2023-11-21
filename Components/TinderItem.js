@@ -12,7 +12,7 @@ import { getDistance, convertDistance } from 'geolib'
 import open from 'react-native-open-maps'
 import tastyPizzaDefault from '../assets/tastyPizzaDefault.png'
 
-export default function Item({
+export default function TinderItem({
     name,
     imageUrl,
     address,
@@ -24,8 +24,8 @@ export default function Item({
     const styles = StyleSheet.create({
         item: {
             flex: 1,
-            padding: 12,
-            width: 272,
+            width: '100%',
+            height: 600,
         },
         name: {
             fontSize: 20,
@@ -63,7 +63,7 @@ export default function Item({
         },
         pic: {
             flex: 1,
-            height: 200,
+            height: 400,
             width: '100%',
             marginTop: 12,
             marginBottom: 12,
@@ -82,7 +82,7 @@ export default function Item({
                     </Text>
                 </View>
             </Pressable>
-            <View style={styles.card}>
+            <View>
                 <View
                     style={{
                         height: 224,
@@ -99,7 +99,6 @@ export default function Item({
                         }
                         resizeMode="cover"
                         style={styles.pic}
-                        borderRadius={16}
                     ></ImageBackground>
                 </View>
                 {address && (

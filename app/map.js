@@ -14,8 +14,8 @@ const styles = StyleSheet.create({
         height: '100%',
     },
     customView: {
-        width: 380,
-        height: 300,
+        // width: 380,
+        // height: 300,
         borderRadius: 12,
         backgroundColor: '#fff',
         shadowColor: '#171717',

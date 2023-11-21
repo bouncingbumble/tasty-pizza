@@ -1,7 +1,7 @@
 import { FlatList, SafeAreaView, StyleSheet, View } from 'react-native'
 import { useContext } from 'react'
 import { TastyContext } from '../tastyContext'
-import Item from '../components/Item'
+import TinderItem from '../components/TinderItem'
 
 const styles = StyleSheet.create({
     container: {
@@ -23,7 +23,7 @@ export default function List() {
                 <FlatList
                     data={pizzaPlaces}
                     renderItem={({ item }) => (
-                        <Item
+                        <TinderItem
                             name={item.name}
                             imageUrl={item.image_url}
                             address={item.location.address1}
