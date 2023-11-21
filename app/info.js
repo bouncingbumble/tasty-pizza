@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useContext } from 'react'
 import {
     StyleSheet,
     View,
@@ -9,6 +9,7 @@ import {
 } from 'react-native'
 import pizalgorithmBg from '../assets/tastyPizzaInfo.png'
 import AsyncStorage from '@react-native-async-storage/async-storage'
+import { TastyContext } from '../tastyContext'
 
 const styles = StyleSheet.create({
     container: {
@@ -59,6 +60,7 @@ const STORAGE_KEY = 'isDeliveryOnly'
 
 export default function Info() {
     const [isDeliveryOnly, setIsDeliveryOnly] = useState(false)
+    const { setRefetch } = useContext(TastyContext)
 
     useEffect(() => {
         getIsDelieveryOnly()
@@ -80,6 +82,7 @@ export default function Info() {
                 JSON.stringify(!isDeliveryOnly)
             )
             setIsDeliveryOnly(!isDeliveryOnly)
+            setRefetch(true)
         } catch (error) {
             alert(error)
         }

@@ -17,6 +17,7 @@ export default function AppLayout() {
 
     const [pizzaPlaces, setPizzaPlaces] = useState([])
     const [location, setLocation] = useState(null)
+    const [refetch, setRefetch] = useState(false)
 
     useEffect(() => {
         const getLocation = async () => {
@@ -49,9 +50,10 @@ export default function AppLayout() {
                 longitude: location.coords.longitude,
             }).then((data) => {
                 setPizzaPlaces(data)
+                setRefetch(false)
             })
         }
-    }, [location])
+    }, [refetch])
 
     return (
         fontsLoaded && (
@@ -64,6 +66,7 @@ export default function AppLayout() {
                     value={{
                         pizzaPlaces,
                         location,
+                        setRefetch: (value) => setRefetch(value),
                     }}
                 >
                     <Tabs
