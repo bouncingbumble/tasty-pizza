@@ -2,8 +2,8 @@ import React, { useContext } from 'react'
 import MapView from 'react-native-maps'
 import { Marker, Callout } from 'react-native-maps'
 import { StyleSheet, View, SafeAreaView, Image } from 'react-native'
-import { Item } from './list'
 import { TastyContext } from '../tastyContext'
+import Item from '../components/Item'
 
 const styles = StyleSheet.create({
     container: {

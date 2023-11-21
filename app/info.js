@@ -66,8 +66,8 @@ export default function Info() {
 
     const getIsDelieveryOnly = async () => {
         try {
-            let bool = await AsyncStorage.getItem(STORAGE_KEY)
-            setIsDeliveryOnly(Boolean(bool))
+            let bool = JSON.parse(await AsyncStorage.getItem(STORAGE_KEY))
+            setIsDeliveryOnly(bool)
         } catch (error) {
             alert(error)
         }
@@ -115,7 +115,7 @@ export default function Info() {
                             thumbColor={isDeliveryOnly ? '#f1af4d' : '#fef0d3'}
                             ios_backgroundColor="#316134"
                             onValueChange={handleToggleSwitch}
-                            value={isDeliveryOnly}
+                            value={isDeliveryOnly ? true : false}
                         />
                     </View>
                 </View>

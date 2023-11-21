@@ -10,6 +10,7 @@ import CompassIcon from '../assets/CompassIcon'
 import LinkIcon from '../assets/LinkIcon'
 import { getDistance, convertDistance } from 'geolib'
 import open from 'react-native-open-maps'
+import tastyPizzaDefault from '../assets/tastyPizzaDefault.png'
 
 export default function Item({
     name,
@@ -87,9 +88,13 @@ export default function Item({
                     }}
                 >
                     <ImageBackground
-                        source={{
-                            uri: imageUrl.length > 0 && imageUrl,
-                        }}
+                        source={
+                            imageUrl.length > 0
+                                ? {
+                                      uri: imageUrl,
+                                  }
+                                : tastyPizzaDefault
+                        }
                         resizeMode="cover"
                         style={styles.pic}
                         borderRadius={16}
