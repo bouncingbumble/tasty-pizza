@@ -71,6 +71,7 @@ export default function AppLayout() {
                             tabBarStyle: {
                                 backgroundColor: '#a42229',
                                 paddingVertical: 16,
+                                borderTopWidth: 0,
                             },
                         }}
                     >

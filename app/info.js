@@ -6,8 +6,8 @@ import {
     ImageBackground,
     Switch,
 } from 'react-native'
-import pizalgorithmBg from '../assets/pizalgorithm-bg.png'
-import { useState } from 'react'
+import pizalgorithmBg from '../assets/tastyPizzaInfo.png'
+import AsyncStorage from '@react-native-async-storage/async-storage'
 
 const styles = StyleSheet.create({
     container: {
@@ -28,8 +28,7 @@ const styles = StyleSheet.create({
         width: '100%',
         justifyContent: 'center',
         alignItems: 'center',
-        paddingRight: 56,
-        paddingLeft: 56,
+        padding: 88,
     },
     text: {
         color: '#316134',
@@ -37,12 +36,11 @@ const styles = StyleSheet.create({
         letterSpacing: 1.2,
         lineHeight: 20.2,
         textAlign: 'center',
-        marginBottom: 160,
     },
     toggleBox: {
         flexDirection: 'row',
         alignItems: 'center',
-        marginBottom: 16,
+        height: 48,
     },
     sliderBox: {
         marginLeft: 10,
@@ -56,10 +54,15 @@ const styles = StyleSheet.create({
     },
 })
 
+const STORAGE_KEY = 'isDeliveryOnly'
+
 export default function Info() {
-    const [isEnabled, setIsEnabled] = useState(false)
-    const toggleSwitch = () => setIsEnabled((previousState) => !previousState)
-    const [minRating, setMinRating] = useState(4)
+    const handleToggleSwitch = async () => {
+        await AsyncStorage.setItem(
+            STORAGE_KEY,
+            !(await AsyncStorage.getItem(STORAGE_KEY))
+        )
+    }
 
     return (
         <SafeAreaView style={styles.container}>
@@ -71,10 +74,11 @@ export default function Info() {
                 <View style={styles.motto}>
                     <Text style={styles.text}>
                         Using a complex pizzalgorithm, our experts at tasty are
-                        able to determine the highest quality pizza available in
-                        your local area. When using tasty.pizza, you'll only be
-                        shown the best of the best.
+                        able to determine the highest quality pizza available
+                        {'\n'}in your local area. {'\n'}When using tasty.pizza,
+                        you'll only be shown the best of the best.
                     </Text>
+                    <Text style={{ height: 48 }}></Text>
                     <View style={styles.toggleBox}>
                         <Text
                             style={{
@@ -87,10 +91,16 @@ export default function Info() {
                         </Text>
                         <Switch
                             trackColor={{ false: '#316134', true: '#a42229' }}
-                            thumbColor={isEnabled ? '#f1af4d' : '#fef0d3'}
+                            thumbColor={async () =>
+                                (await AsyncStorage.getItem(STORAGE_KEY))
+                                    ? '#f1af4d'
+                                    : '#fef0d3'
+                            }
                             ios_backgroundColor="#316134"
-                            onValueChange={toggleSwitch}
-                            value={isEnabled}
+                            onValueChange={handleToggleSwitch}
+                            value={async () =>
+                                await AsyncStorage.getItem(STORAGE_KEY)
+                            }
                         />
                     </View>
                 </View>
