@@ -7,11 +7,6 @@ const styles = StyleSheet.create({
     container: {
         flex: 1,
     },
-
-    separator: {
-        backgroundColor: '#316134',
-        height: 6,
-    },
 })
 
 export default function List() {
@@ -31,10 +26,11 @@ export default function List() {
                             longitude={item.coordinates.longitude}
                             latitude={item.coordinates.latitude}
                             userLocation={location.coords}
+                            reviewCount={item.review_count}
+                            rating={item.rating}
                         />
                     )}
                     keyExtractor={(item) => item.id}
-                    ItemSeparatorComponent={<View style={styles.separator} />}
                 />
             )}
         </SafeAreaView>
