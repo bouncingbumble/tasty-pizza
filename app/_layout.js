@@ -34,24 +34,38 @@ export default function AppLayout() {
 
                 let location = await Location.getCurrentPositionAsync({})
                 setLocation(location)
+                return location
             } catch (error) {
                 console.log(error)
                 alert('Error requesting location permission:')
             }
         }
 
-        getLocation()
-    }, [])
-
-    useEffect(() => {
-        if (location !== null) {
+        getLocation().then((location) =>
             getPizzaPlaces({
                 latitude: location.coords.latitude,
                 longitude: location.coords.longitude,
-            }).then((data) => {
-                setPizzaPlaces(data)
-                setRefetch(false)
             })
+                .then((data) => {
+                    setPizzaPlaces(data)
+                })
+                .catch((err) => {
+                    console.log(err)
+                })
+        )
+    }, [])
+
+    useEffect(() => {
+        if (refetch === true) {
+            if (location !== null) {
+                getPizzaPlaces({
+                    latitude: location.coords.latitude,
+                    longitude: location.coords.longitude,
+                }).then((data) => {
+                    setPizzaPlaces(data)
+                    setRefetch(false)
+                })
+            }
         }
     }, [refetch])
 

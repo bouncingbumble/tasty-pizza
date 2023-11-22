@@ -26,6 +26,7 @@ export default function TinderItem({
             flex: 1,
             width: '100%',
             height: 600,
+            border: '1px solid red',
         },
         name: {
             fontSize: 20,
@@ -72,16 +73,6 @@ export default function TinderItem({
 
     return (
         <View style={styles.item}>
-            <Pressable onPress={async () => await Linking.openURL(website)}>
-                <View style={{}}>
-                    <Text style={styles.name}>
-                        {name}{' '}
-                        <View style={styles.linkIcon}>
-                            <LinkIcon />
-                        </View>
-                    </Text>
-                </View>
-            </Pressable>
             <View>
                 <View
                     style={{
@@ -100,6 +91,18 @@ export default function TinderItem({
                         resizeMode="cover"
                         style={styles.pic}
                     ></ImageBackground>
+                </View>
+                <View>
+                    <Pressable
+                        onPress={async () => await Linking.openURL(website)}
+                    >
+                        <Text style={styles.name}>
+                            {name}
+                            <View style={styles.linkIcon}>
+                                <LinkIcon />
+                            </View>
+                        </Text>
+                    </Pressable>
                 </View>
                 {address && (
                     <Pressable

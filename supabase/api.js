@@ -5,7 +5,7 @@ const STORAGE_KEY = 'isDeliveryOnly'
 
 export const getPizzaPlaces = async ({ latitude, longitude }) => {
     try {
-        let isDeliveryOnly = 'false'
+        let isDeliveryOnly = false
         try {
             isDeliveryOnly = JSON.parse(await AsyncStorage.getItem(STORAGE_KEY))
         } catch (error) {
