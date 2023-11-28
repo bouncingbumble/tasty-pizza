@@ -87,7 +87,7 @@ export default function TinderItem({
                     style={{
                         height: 48,
                         width: 48,
-                        backgroundColor: '#fef0d3',
+                        backgroundColor: '#fff',
                         borderRadius: '25%',
                         marginTop: -24,
                         marginRight: 12,
@@ -109,7 +109,7 @@ export default function TinderItem({
                     style={{
                         height: 48,
                         width: 48,
-                        backgroundColor: '#fef0d3',
+                        backgroundColor: '#fff',
                         borderRadius: '25%',
                         marginTop: -24,
                         shadowColor: '#171717',

@@ -1,18 +1,16 @@
-import {
-    Text,
-    StyleSheet,
-    View,
-    Pressable,
-    ImageBackground,
-    Linking,
-} from 'react-native'
+import { Text, StyleSheet, View, Pressable, Image, Linking } from 'react-native'
 import CompassIcon from '../assets/CompassIcon'
 import LinkIcon from '../assets/LinkIcon'
 import { getDistance, convertDistance } from 'geolib'
 import open from 'react-native-open-maps'
 import tastyPizzaDefault from '../assets/tastyPizzaDefault.png'
+import InfoIcon from '../assets/InfoIcon'
+import PizzaIcon from '../assets/PizzaIcon'
+import SquarePinIcon from '../assets/SquarePinIcon'
+import StarIcon from '../assets/StarIcon'
+import HalfStarIcon from '../assets/HalfStarIcon'
 
-export default function Item({
+export default function TinderItem({
     name,
     imageUrl,
     address,
@@ -20,15 +18,16 @@ export default function Item({
     latitude,
     longitude,
     userLocation,
+    reviewCount,
+    rating,
 }) {
     const styles = StyleSheet.create({
         item: {
             flex: 1,
-            padding: 12,
             width: 272,
         },
         name: {
-            fontSize: 20,
+            fontSize: 24,
             color: '#000',
             fontFamily: 'Nanum Gothic Bold',
         },
@@ -36,10 +35,9 @@ export default function Item({
             flexDirection: 'row',
             alignItems: 'center',
             justifyContent: 'space-between',
+            marginTop: 16,
         },
         address: {
-            color: '#f1af4d',
-            marginLeft: 8,
             fontFamily: 'Nanum Gothic',
         },
         addressLeft: {
@@ -47,79 +45,152 @@ export default function Item({
             alignItems: 'center',
         },
         distance: {
-            paddingRight: 4,
-            fontFamily: 'Nanum Gothic Bold',
-            color: '#a42229',
-        },
-        mapIcon: {
-            height: 24,
-            width: 24,
-            backgroundColor: '#a42229',
-            borderRadius: '23%',
+            marginLeft: 12,
+            fontFamily: 'Nanum Gothic',
         },
         linkIcon: {
             height: 16,
             width: 16,
         },
         pic: {
-            flex: 1,
-            height: 200,
+            height: 240,
             width: '100%',
-            marginTop: 12,
-            marginBottom: 12,
+            borderTopLeftRadius: 12,
+            borderTopRightRadius: 12,
+        },
+        detailsContainer: {
+            paddingTop: 8,
+            paddingLeft: 20,
+            paddingRight: 20,
+            paddingBottom: 32,
         },
     })
 
     return (
         <View style={styles.item}>
-            <Pressable onPress={async () => await Linking.openURL(website)}>
-                <View style={{}}>
-                    <Text style={styles.name}>
-                        {name}{' '}
-                        <View style={styles.linkIcon}>
-                            <LinkIcon />
-                        </View>
-                    </Text>
-                </View>
-            </Pressable>
-            <View style={styles.card}>
+            <Image
+                source={
+                    imageUrl.length > 0
+                        ? {
+                              uri: imageUrl,
+                          }
+                        : tastyPizzaDefault
+                }
+                style={styles.pic}
+            ></Image>
+            <View
+                style={{
+                    flexDirection: 'row',
+                    justifyContent: 'flex-end',
+                    paddingRight: 20,
+                }}
+            >
                 <View
                     style={{
-                        height: 224,
-                        width: '100%',
+                        height: 48,
+                        width: 48,
+                        backgroundColor: '#fff',
+                        borderRadius: '25%',
+                        marginTop: -24,
+                        marginRight: 12,
+                        shadowColor: '#171717',
+                        shadowOffset: { width: -2, height: 4 },
+                        shadowOpacity: 0.2,
+                        shadowRadius: 3,
+                        paddingTop: 12,
+                        paddingBottom: 12,
                     }}
                 >
-                    <ImageBackground
-                        source={
-                            imageUrl.length > 0
-                                ? {
-                                      uri: imageUrl,
-                                  }
-                                : tastyPizzaDefault
-                        }
-                        resizeMode="cover"
-                        style={styles.pic}
-                        borderRadius={16}
-                    ></ImageBackground>
+                    <Pressable
+                        onPress={async () => await Linking.openURL(website)}
+                    >
+                        <InfoIcon />
+                    </Pressable>
+                </View>
+                <View
+                    style={{
+                        height: 48,
+                        width: 48,
+                        backgroundColor: '#fff',
+                        borderRadius: '25%',
+                        marginTop: -24,
+                        shadowColor: '#171717',
+                        shadowOffset: { width: -2, height: 4 },
+                        shadowOpacity: 0.2,
+                        shadowRadius: 3,
+                        padding: 12,
+                    }}
+                >
+                    {address && (
+                        <Pressable
+                            onPress={() =>
+                                open({
+                                    end: address,
+                                })
+                            }
+                        >
+                            <SquarePinIcon />
+                        </Pressable>
+                    )}
+                </View>
+            </View>
+            <View style={styles.detailsContainer}>
+                <Text style={styles.name}>{name}</Text>
+                <View style={{ flexDirection: 'row', marginTop: 16 }}>
+                    {rating > 0.5 && (
+                        <View style={{ height: 24, width: 24 }}>
+                            <StarIcon />
+                        </View>
+                    )}
+                    {rating > 1.5 && (
+                        <View style={{ height: 24, width: 24 }}>
+                            <StarIcon />
+                        </View>
+                    )}
+                    {rating > 2.5 && (
+                        <View style={{ height: 24, width: 24 }}>
+                            <StarIcon />
+                        </View>
+                    )}
+                    {rating > 3.5 && (
+                        <View style={{ height: 24, width: 24 }}>
+                            <StarIcon />
+                        </View>
+                    )}
+                    {rating > 4.5 && (
+                        <View style={{ height: 24, width: 24 }}>
+                            <StarIcon />
+                        </View>
+                    )}
+                    {rating.toString().includes('.5') && (
+                        <View style={{ height: 24, width: 24 }}>
+                            <HalfStarIcon />
+                        </View>
+                    )}
+                    <Text
+                        style={{
+                            marginLeft: !rating.toString().includes('.5')
+                                ? 12
+                                : 0,
+                            fontSize: 16,
+                            fontFamily: 'Nanum Gothic',
+                            lineHeight: 28,
+                        }}
+                    >
+                        {reviewCount + ' reviews'}
+                    </Text>
                 </View>
                 {address && (
-                    <Pressable
-                        onPress={() =>
-                            open({
-                                end: address,
-                            })
-                        }
-                    >
-                        <View style={styles.addressContainer}>
-                            <View style={styles.addressLeft}>
-                                <View style={styles.mapIcon}>
-                                    <CompassIcon />
-                                </View>
-                                {address && (
-                                    <Text style={styles.address}>
-                                        {address}
-                                    </Text>
-                                )}
+                    <View style={styles.addressContainer}>
+                        <View style={styles.addressLeft}>
+                            <View
+                                style={{
+                                    height: 24,
+                                    width: 24,
+                                    marginLeft: 4,
+                                }}
+                            >
+                                <CompassIcon />
                             </View>
                             {latitude && longitude && userLocation && (
                                 <Text style={styles.distance}>
@@ -138,8 +209,14 @@ export default function Item({
                                     mi
                                 </Text>
                             )}
+                            {address && (
+                                <Text style={styles.address}>
+                                    {' - '}
+                                    {address}
+                                </Text>
+                            )}
                         </View>
-                    </Pressable>
+                    </View>
                 )}
             </View>
         </View>

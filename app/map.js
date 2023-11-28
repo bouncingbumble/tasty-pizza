@@ -69,6 +69,8 @@ export default function Map() {
                                             }
                                             latitude={item.coordinates.latitude}
                                             userLocation={location.coords}
+                                            reviewCount={item.review_count}
+                                            rating={item.rating}
                                         />
                                     </Callout>
                                 </Marker>
