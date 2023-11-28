@@ -6,6 +6,7 @@ const STORAGE_KEY = 'isDeliveryOnly'
 export const getPizzaPlaces = async ({ latitude, longitude }) => {
     try {
         let isDeliveryOnly = false
+
         try {
             isDeliveryOnly = JSON.parse(await AsyncStorage.getItem(STORAGE_KEY))
         } catch (error) {
@@ -34,9 +35,12 @@ export const getPizzaPlaces = async ({ latitude, longitude }) => {
                 return true
             }
         })
-        console.log(places.length)
+
+        console.log(places[0])
+
         return places
     } catch (error) {
         console.error('Error')
+        console.log(error)
     }
 }

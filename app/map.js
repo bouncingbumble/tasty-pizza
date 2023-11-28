@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import MapView from 'react-native-maps'
 import { Marker, Callout } from 'react-native-maps'
-import { StyleSheet, View, SafeAreaView, Image } from 'react-native'
+import { StyleSheet, View, SafeAreaView, Image, Text } from 'react-native'
 import { TastyContext } from '../tastyContext'
 import Item from '../components/Item'
 
@@ -31,7 +31,7 @@ export default function Map() {
     return (
         <SafeAreaView style={styles.container}>
             <View>
-                {location.coords && pizzaPlaces.length > 0 && (
+                {location && pizzaPlaces ? (
                     <MapView
                         style={styles.map}
                         initialRegion={{
@@ -77,6 +77,8 @@ export default function Map() {
                             )
                         })}
                     </MapView>
+                ) : (
+                    <Text>Couldn't find any tasty pizza :(</Text>
                 )}
             </View>
         </SafeAreaView>

@@ -1,4 +1,4 @@
-import { FlatList, SafeAreaView, StyleSheet, View } from 'react-native'
+import { FlatList, SafeAreaView, StyleSheet, Text } from 'react-native'
 import { useContext } from 'react'
 import { TastyContext } from '../tastyContext'
 import TinderItem from '../components/TinderItem'
@@ -14,7 +14,7 @@ export default function List() {
 
     return (
         <SafeAreaView style={styles.container}>
-            {pizzaPlaces.length !== 0 && (
+            {pizzaPlaces ? (
                 <FlatList
                     data={pizzaPlaces}
                     renderItem={({ item }) => (
@@ -32,6 +32,8 @@ export default function List() {
                     )}
                     keyExtractor={(item) => item.id}
                 />
+            ) : (
+                <Text>Couldn't find any tasty pizza :(</Text>
             )}
         </SafeAreaView>
     )
