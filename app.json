@@ -1,44 +1,40 @@
 {
-  "expo": {
-    "name": "tasty-pizza",
-    "slug": "tasty-pizza",
-    "version": "1.0.0",
-    "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
-    "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "cover",
-      "backgroundColor": "#a42229"
-    },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
-    "ios": {
-      "supportsTablet": true,
-      "bundleIdentifier": "com.jordan.tasty.pizza"
-    },
-    "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/icon.png",
-        "backgroundColor": "#ffffff"
-      },
-      "package": "com.jordan.tasty.pizza"
-    },
-    "web": {
-      "favicon": "./assets/favicon.png"
-    },
-    "plugins": [
-      "expo-router"
-    ],
-    "scheme": "tasty-pizza-scheme",
-    "extra": {
-      "router": {
-        "origin": false
-      },
-      "eas": {
-        "projectId": "ca7ae156-7ba0-46a9-9225-36e881116610"
-      }
+    "expo": {
+        "name": "Tasty Pizza",
+        "slug": "Tasty-Pizza",
+        "version": "1.0.0",
+        "orientation": "portrait",
+        "icon": "./assets/icon.png",
+        "userInterfaceStyle": "light",
+        "splash": {
+            "image": "./assets/splash.png",
+            "resizeMode": "cover",
+            "backgroundColor": "#a42229"
+        },
+        "assetBundlePatterns": ["**/*"],
+        "ios": {
+            "supportsTablet": true,
+            "bundleIdentifier": "com.jordan.tasty.pizza"
+        },
+        "android": {
+            "adaptiveIcon": {
+                "foregroundImage": "./assets/icon.png",
+                "backgroundColor": "#ffffff"
+            },
+            "package": "com.jordan.tasty.pizza"
+        },
+        "web": {
+            "favicon": "./assets/favicon.png"
+        },
+        "plugins": ["expo-router"],
+        "scheme": "tasty-pizza-scheme",
+        "extra": {
+            "router": {
+                "origin": false
+            },
+            "eas": {
+                "projectId": "ca7ae156-7ba0-46a9-9225-36e881116610"
+            }
+        }
     }
-  }
 }
