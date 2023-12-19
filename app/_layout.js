@@ -18,8 +18,10 @@ export default function AppLayout() {
     const [pizzaPlaces, setPizzaPlaces] = useState([])
     const [location, setLocation] = useState(null)
     const [refetch, setRefetch] = useState(false)
+    const [isLoading, setIsLoading] = useState(false)
 
     useEffect(() => {
+        setIsLoading(true)
         const getLocation = async () => {
             try {
                 let { status } =
@@ -48,6 +50,7 @@ export default function AppLayout() {
             })
                 .then((data) => {
                     setPizzaPlaces(data)
+                    setIsLoading(false)
                 })
                 .catch((err) => {
                     console.log(err)
@@ -81,6 +84,7 @@ export default function AppLayout() {
                         pizzaPlaces,
                         location,
                         setRefetch: (value) => setRefetch(value),
+                        isLoading,
                     }}
                 >
                     <Tabs
@@ -108,6 +112,7 @@ export default function AppLayout() {
                                 tabBarIcon: () => <ListIcon />,
                                 tabBarIconStyle: { marginBottom: -8 },
                             }}
+                            isLoading={isLoading}
                         />
                         <Tabs.Screen
                             name="map"
