@@ -14,7 +14,8 @@
         "assetBundlePatterns": ["**/*"],
         "ios": {
             "supportsTablet": true,
-            "bundleIdentifier": "com.jordan.tasty.pizza"
+            "bundleIdentifier": "com.jordan.tasty.pizza",
+            "buildNumber": "1.0.1"
         },
         "android": {
             "adaptiveIcon": {
