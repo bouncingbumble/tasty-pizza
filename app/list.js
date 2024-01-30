@@ -1,4 +1,4 @@
-import { FlatList, SafeAreaView, StyleSheet, Text, View } from 'react-native'
+import { FlatList, SafeAreaView, StyleSheet, Text } from 'react-native'
 import { useContext } from 'react'
 import { TastyContext } from '../tastyContext'
 import TinderItem from '../components/TinderItem'
@@ -13,7 +13,8 @@ const styles = StyleSheet.create({
 })
 
 export default function List() {
-    const { pizzaPlaces, location, isLoading } = useContext(TastyContext)
+    const { pizzaPlaces, location, isLoading, setRefetch } =
+        useContext(TastyContext)
 
     return (
         <SafeAreaView style={styles.container}>
@@ -47,6 +48,8 @@ export default function List() {
                     style={{
                         backgroundColor: '#FFF',
                     }}
+                    onRefresh={() => setRefetch(true)}
+                    refreshing={isLoading}
                 />
             )}
             {!isLoading && pizzaPlaces.length === 0 && (
