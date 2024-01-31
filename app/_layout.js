@@ -13,6 +13,7 @@ export default function AppLayout() {
     const [fontsLoaded] = useFonts({
         'Nanum Gothic': require('../assets/fonts/NanumGothic-Regular.ttf'),
         'Nanum Gothic Bold': require('../assets/fonts/NanumGothic-Bold.ttf'),
+        Damion: require('../assets/fonts/Damion-Regular.ttf'),
     })
 
     const [pizzaPlaces, setPizzaPlaces] = useState([])
@@ -49,7 +50,7 @@ export default function AppLayout() {
                 longitude: location.coords.longitude,
             })
                 .then((data) => {
-                    setPizzaPlaces([])
+                    setPizzaPlaces(data)
                     setTimeout(() => {
                         setIsLoading(false)
                     }, 1500)
@@ -68,7 +69,7 @@ export default function AppLayout() {
                     latitude: location.coords.latitude,
                     longitude: location.coords.longitude,
                 }).then((data) => {
-                    setPizzaPlaces([])
+                    setPizzaPlaces(data)
                     setRefetch(false)
                     setTimeout(() => {
                         setIsLoading(false)

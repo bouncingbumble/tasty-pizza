@@ -1,4 +1,4 @@
-import { FlatList, SafeAreaView, StyleSheet, Text } from 'react-native'
+import { FlatList, SafeAreaView, StyleSheet, Text, View } from 'react-native'
 import { useContext } from 'react'
 import { TastyContext } from '../tastyContext'
 import TinderItem from '../components/TinderItem'
@@ -10,11 +10,31 @@ const styles = StyleSheet.create({
         flex: 1,
         backgroundColor: '#a42229',
     },
+    noPizzaContainer: {
+        flex: 1,
+        justifyContent: 'center',
+    },
+    noPizzaText: {
+        fontFamily: 'Damion',
+        color: '#FEF0D3',
+        fontSize: 42,
+        padding: 48,
+        textAlign: 'center',
+        letterSpacing: 1.2,
+    },
 })
 
 export default function List() {
     const { pizzaPlaces, location, isLoading, setRefetch } =
         useContext(TastyContext)
+
+    const NoPizza = () => (
+        <View style={styles.noPizzaContainer}>
+            <Text style={styles.noPizzaText}>
+                Couldn't find any tasty pizza :(
+            </Text>
+        </View>
+    )
 
     return (
         <SafeAreaView style={styles.container}>
@@ -28,7 +48,7 @@ export default function List() {
                 />
             )}
 
-            {!isLoading && pizzaPlaces && (
+            {!isLoading && (
                 <FlatList
                     data={pizzaPlaces}
                     renderItem={({ item }) => (
@@ -46,14 +66,13 @@ export default function List() {
                     )}
                     keyExtractor={(item) => item.id}
                     style={{
-                        backgroundColor: '#FFF',
+                        backgroundColor:
+                            pizzaPlaces.length === 0 ? '#a42229' : '#FFF',
                     }}
                     onRefresh={() => setRefetch(true)}
                     refreshing={isLoading}
+                    ListEmptyComponent={NoPizza}
                 />
-            )}
-            {!isLoading && pizzaPlaces.length === 0 && (
-                <Text>Couldn't find any tasty pizza :(</Text>
             )}
         </SafeAreaView>
     )
