@@ -111,7 +111,7 @@ export default function Info() {
                                 fontFamily: 'Nanum Gothic Bold',
                             }}
                         >
-                            Delivery Only {isDeliveryOnly ? ' (on)' : ' (off)'}
+                            Delivery Only {isDeliveryOnly ? '(on)' : '(off)'}
                         </Text>
                         <Switch
                             trackColor={{ false: '#316134', true: '#a42229' }}

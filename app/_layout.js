@@ -49,8 +49,10 @@ export default function AppLayout() {
                 longitude: location.coords.longitude,
             })
                 .then((data) => {
-                    setPizzaPlaces(data)
-                    setIsLoading(false)
+                    setPizzaPlaces([])
+                    setTimeout(() => {
+                        setIsLoading(false)
+                    }, 1500)
                 })
                 .catch((err) => {
                     console.log(err)
@@ -61,12 +63,16 @@ export default function AppLayout() {
     useEffect(() => {
         if (refetch === true) {
             if (location !== null) {
+                setIsLoading(true)
                 getPizzaPlaces({
                     latitude: location.coords.latitude,
                     longitude: location.coords.longitude,
                 }).then((data) => {
-                    setPizzaPlaces(data)
+                    setPizzaPlaces([])
                     setRefetch(false)
+                    setTimeout(() => {
+                        setIsLoading(false)
+                    }, 1500)
                 })
             }
         }
